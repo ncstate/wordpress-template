@@ -18,11 +18,11 @@ The **RSS App** is no longer provided by default. A replacement system is in the
 
 ## Getting Started
 General site-wide settings can be found in **NC State Theme Options** in the left-hand nav of the admin pages. There you can choose the type of NC State "Brick" to use and also add tracking code for services such as Google Analytics.
-
+### Social Media
 You also have the option to provide the username of your social media accounts. The theme supports Facebook, Twitter, Instagram, and YouTube; however, not all accounts are required. The social networks to which you provide a username will automatically populate in your site’s footer. The social content will also be available in the social media module on the homepage if you choose to include it on that page.
-
-The NC State Theme Options menu also lets you set other footer content such as resource links and your unit’s contact information. You can also set metadata for your site. Metadata is additional data that search engines and social networks can use to better describe your site’s content. The search engine description is usually the snippet of text displayed beneath your site’s URL in search engine results. The social media title, teaser text, and image are used for social networks such as Facebook when a URL from your website is shared on social media. The metadata provided in NC State Theme Options will automatically apply to every page on our site. If desired, you can override that content on a page-by-page basis. Providing site-wide and/or page-by-page metadata is not required, but it generally helps with search results.
-
+### Metadata for SEO and Social Media Sharing
+ You can also set metadata for your site. Metadata is additional data that search engines and social networks can use to better describe your site’s content. The search engine description is usually the snippet of text displayed beneath your site’s URL in search engine results. The social media title, teaser text, and image are used for social networks such as Facebook when a URL from your website is shared on social media. The metadata provided in NC State Theme Options will automatically apply to every page on our site. If desired, you can override that content on a page-by-page basis. Providing site-wide and/or page-by-page metadata is not required, but it generally helps with search results.
+### Setting up Homepage and Menus
 Once you have Wordpress installed and the theme activated, you will need to setup your homepage and menu structure.
 
 You can **create a homepage** by going to ``Pages->Add New``. In the right-hand menu select “Homepage” as the page’s template. You can then configure the page’s modules. Click Publish (or Update) to save the page.
