@@ -1,0 +1,41 @@
+.mod-generic {
+	width: 100%;
+	padding: 3em 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 3em 0;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-family: UniversRoman;
+		margin: 0 0 15px;
+		padding-left: 1em;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 2em;
+		}
+		font-weight: bold;
+	}
+
+	a:hover > .generic-block {
+		background-color: #ccc;
+	}
+}
+
+.generic-block {
+	@include make-xs-column(12);
+	@include make-sm-column(4);
+	@include make-md-column(4);
+	padding: 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 1em 2em;
+	}
+
+	img {
+		margin-bottom: 22px;
+	}
+
+	h4 {
+		margin-top: 0px;
+		color: #c00;
+	}
+}

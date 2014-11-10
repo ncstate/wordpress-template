@@ -1,0 +1,121 @@
+.mod-events {
+	width: 100%;
+	padding: 3em 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 3em 0;
+	}
+
+	a {
+		color: #000;
+	}
+
+	a:hover > .event-block {
+		background-color: #ccc;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-family: UniversRoman;
+		margin: 0 0 15px;
+		padding-left: 1em;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 2em;
+		}
+		font-weight: bold;
+	}
+
+	.btn {
+		color: #fff;
+		float: right;
+		margin: 15px;
+		padding: 8px 12px 8px 20px;
+
+		.glyphicon {
+			font-size: 1.5em;
+			margin-left: 10px;
+			vertical-align: top;
+		}
+	}
+}
+
+.event-block {
+	@include make-xs-column(12);
+	@include make-sm-column(4);
+	@include make-md-column(4);
+	padding: 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 1em 2em;
+	}
+
+	h4 {
+		color: #c00;
+	}
+}
+
+.event-date {
+	padding: 10px 0;
+
+	background-color: #c00;
+	color: #fff;
+	font-size: 2em;
+	font-family: "Glypha LT W01 55 Roman";
+
+	time {
+		display: block;
+		text-align: center;
+	}
+}
+
+.event-details {
+	margin-top: 20px;
+
+	p {
+		margin: 0;
+	}
+
+	h4 {
+		margin: 15px 0;
+		font-size: 1.5em;
+	}
+}
+
+.mod-events.is-vertical {
+
+	h2 {
+		padding-left: 0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		.event-block {
+			padding: 1.5em 1em;
+		}
+
+		.event-date {
+			@include make-sm-column(3.5);
+			@include make-md-column(3);
+			padding: 0.3em 0.25em;
+			time {
+				font-size: 0.9em;
+				line-height: 1.2;
+			}
+			span {
+				display: block;
+				font-size: 2.2em;
+			}
+		}
+
+		.event-details {
+			@include make-md-column(8);
+			margin-top: 0;
+			h4 {
+				font-size: 1.5em;
+			}
+		}
+	}
+
+	.event-date {
+		span {
+			margin-left: 5px;
+		}
+	}
+}

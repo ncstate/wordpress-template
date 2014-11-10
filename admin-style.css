@@ -1,0 +1,16 @@
+.ncstate-utility-bar {
+	position: relative !important;
+	margin-top: 16px;
+}
+	@media (min-width: 768px) {
+		.ncstate-utility-bar {
+			margin-top: 0;
+		}
+	}
+
+.left-nav {
+	padding: 90px 0 0 !important;
+}
+	.left-nav button {
+		padding-top: 95px !important;
+	}

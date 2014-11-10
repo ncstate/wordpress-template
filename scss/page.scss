@@ -1,0 +1,16 @@
+.page {
+  @include make-xs-column(12);
+  @include make-md-column(9);
+  
+  @media (min-width: $screen-sm-min) {
+     padding-right: 30px;
+  }
+
+  &.full-width {
+    @include make-md-column(12);
+  }
+
+  > :first-child {
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,83 @@
+.mod-rss {
+	width: 100%;
+	padding: 3em 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 3em 0;
+	}
+
+	a {
+		color: #000;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-family: UniversRoman;
+		margin: 0 0 15px;
+		padding-left: 1em;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 2em;
+		}
+		font-weight: bold;
+	}
+
+	.btn {
+		color: #fff;
+		float: right;
+		margin: 10px;
+		padding: 8px 12px 8px 20px;
+
+		.glyphicon {
+			font-size: 1.5em;
+			margin-left: 10px;
+			vertical-align: top;
+		}
+	}
+
+	.no-stories {
+		padding-left: 1em;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 2em;
+		}
+	}
+}
+
+.rss-story-block {
+	@include make-xs-column(12);
+	@include make-sm-column(4);
+	@include make-md-column(4);
+	padding: 1em;
+	@media (min-width: $screen-sm-min) {
+		padding: 1em 2em;
+	}
+
+	h4 {
+		color: #c00;
+		margin-top: 0;
+	}
+
+	&:hover {
+		background-color: #ccc;
+	}
+
+	time {
+		display: block;
+		font-weight: bold;
+		margin: 0 0 10px;
+	}
+
+	img {
+		@include make-xs-column(3);
+		@include make-sm-column(12);
+		@include make-md-column(3);
+		padding: 0;
+	}
+
+	.has-thumb {
+		@include make-xs-column(9);
+		@include make-sm-column(12);
+		@media (max-width: $screen-md-min) and (min-width: $screen-sm-min) {
+			padding: 15px 0 0;
+		}
+		@include make-md-column(9);
+	}
+}

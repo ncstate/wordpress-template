@@ -1,0 +1,83 @@
+.archive {
+	@include make-sm-column(12);
+	@include make-md-column(8);
+	
+	article {
+		clear: both;
+		margin: 0.5em 0;
+		width: 100%;
+		@media (min-width: $screen-sm-min) {
+			width: 75%;
+		}
+		
+		a {
+			color: #000;
+			display: block;
+			
+			&:hover {
+				background-color: #f2f2f2;
+			}
+			
+			h2 {
+				color: #cc0000;
+				font-size: 1.4em;
+			}
+			
+			h3 {
+				margin-top: 0;
+			}
+			
+			h6 {
+				margin: 0;
+			}
+		}
+		
+		picture {
+			padding: 1em;
+			display: block;
+			@media (min-width: 480px) {
+				width: (1/3)*100%;
+				max-width: 150px;
+				float: left;
+			}
+
+			img {
+				margin: 0;
+			}
+		}
+
+		.article-details {
+			padding: 1em;
+			
+
+			&.has-thumb {
+				@media (min-width: 480px) {
+					width: (2/3)*100%;
+					float: left;
+				}
+			}
+		}
+		
+		&.featured {
+			width: 100%;
+
+			a {
+				padding: 1em;
+			}
+			
+			img {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+
+	.pagination {
+		padding-left: 1em;
+
+		.current {
+			background-color: $brand-red;
+			color: #fff;
+		}
+	}
+}

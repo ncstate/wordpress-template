@@ -1,0 +1,142 @@
+header {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding: 0 15px;
+	@media (max-width: $screen-sm-min) {
+		padding: 0;
+	}
+}
+
+.site-title {
+	@include clearfix();
+	margin-top: 2.5em;
+	@media (max-width: $screen-sm-min) {
+		margin: 1.5em 0;
+	}
+
+	a {
+		color: #000;
+	}
+
+	button {
+		display: none;
+		float: right;
+		border: none;
+		background-color: #fff;
+		font-size: 2em;
+		margin: -2px -5px -5px 0;
+		padding: 0;
+		@media (max-width: $screen-sm-min) {
+			display: block;
+		}	
+	}
+
+	img {
+		float: left;
+		width: 8.214em;
+		padding-right: 1em;
+		@media (max-width: $screen-sm-min) {
+			padding-bottom: (5/14)*1em;
+		}
+	}
+	
+	h6, h1 {
+		float: left;
+		margin: 0;
+		padding: 0 1em 0 0;
+
+		font-family: UniversCondensed;
+		font-size: 1.7em;
+		font-weight: normal;
+	}
+
+	.brick-2x2 {
+		line-height: 1.5;
+		font-size: 2.3em;
+	}
+}
+
+#global-nav {
+	font-family: UniversCondensed;
+	padding: 1.7em 0;
+	display: block;
+	margin-left: -7px;
+	@media (max-width: $screen-sm-min) {
+		display: none;
+		padding-top: 0;
+	}
+
+	> ul > li {
+		float: left;
+		padding: 0 7px;
+
+		a:hover,
+		&.current-menu-item > a,
+		&.current-page-parent > a {
+			background: none;
+			border-bottom: 2px solid $brand-red;
+			padding-bottom: 3px;
+		}
+	}
+
+	li > ul {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		z-index: 1001;
+		width: 100%;
+		padding: 10px 0;
+		margin-left: -10px;
+		min-width: 170px;
+
+		li {
+			padding: 5px 10px;
+		}
+
+		a {
+			color: #aaa;
+			padding: 3px 2px;
+			display: block;
+
+			&:hover {
+				color: #000;
+				border-bottom: none;
+				padding-bottom: 3px;
+			}
+		}
+	}
+
+	li:hover > ul {
+		display: block;
+	}
+
+	a {
+		padding: 5px 2px;
+		color: #000;
+	}
+
+	@media (max-width: $screen-sm-min) {
+		> ul > li {
+			font-size: 1.3em;
+			float: none;
+			padding: 0.5em;
+
+			ul {
+				display: block;
+				position: static;
+				padding-left: 1.3em;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			&:nth-child(n+2) {
+				margin: 10px 0;
+			}
+		}
+
+		a:hover {
+			border-bottom: none;
+			padding-bottom: 5px;
+		}
+	}
+}

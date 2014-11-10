@@ -1,0 +1,23 @@
+.widget_search {
+  form > div {
+    @include clearfix();
+  }
+  label {
+    display: block;
+  }
+  #s {
+    width: 70%;
+    float: left;
+  }
+  #searchsubmit {
+    width: 4.2em;
+    float: left;
+    background-color: $brand-red;
+    color: #fff;
+    border: none;
+    margin-left: 2px;
+    &:hover {
+      background-color: $brand-reynolds;
+    }
+  }
+}

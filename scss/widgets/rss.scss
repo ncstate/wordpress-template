@@ -1,0 +1,34 @@
+.widget_rss {
+  h2 a {
+    color: #333;
+    &:hover {
+      color: $brand-red;
+    }
+  }
+
+  a[title="Syndicate this content"] {
+    display: none;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 0.9em;
+
+    a {
+      display: block;
+      font-size: 1.3em;
+    }
+
+    .rss-date {
+      display: block;
+      // font-weight: bold;
+      color: #999;
+    }
+
+    cite {
+      display: block;
+      font-style: italic;
+    }
+  }
+
+}

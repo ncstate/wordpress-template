@@ -1,0 +1,79 @@
+.hp-banner {
+	background-color: #c00;
+	color: #fff;
+	margin: inherit;
+	@media (max-width: $screen-sm-min) {
+		margin: 0 -15px;
+	}
+	a {
+		color: #fff;
+	}
+	p {
+		margin: 0;
+	}
+	img {
+		width: 100%;
+	}
+	h2 {
+		width: 100%;
+		margin: 0;
+		padding: 15px 0;
+		color: #fff;
+		font-family: UniversCondensed;
+		font-size: 1.6em;
+		@media (min-width: $screen-sm-min) {
+			font-size: 2em;
+			padding: 15px 10px;
+		}
+	}
+	a:hover h2 {
+		text-decoration: underline;
+	}
+	.glyphicon {
+		padding: 5px;
+		margin-left: 5px;
+		vertical-align: bottom;
+	}
+	.sub-head {
+		display: none;
+		margin: 15px 10px -10px;
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
+	}
+
+	&.split {
+		@include make-md-column(7.5);
+		padding: 0;
+		
+		img {
+			height: 49.6667%;
+			width: 100%;
+		}
+
+		.banner-action {
+			padding: 0 0 1em 1em;
+		}
+	}
+}
+
+.hp-banner-sidebar {
+	@include make-md-column(4.5);
+
+	.mod-rss,
+	.mod-events {
+		padding: 1.5em 0 0 1em;
+	}
+
+	.rss-story-block,
+	.event-block {
+		width: 100%;
+		@media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1){
+			width: 50%;
+		}
+	}
+
+	.rss-story-block p {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,42 @@
+.side-navigation {
+	@include make-md-column(2);
+	font-family: UniversCondensed;
+
+	li {
+		padding: 0.5em 0;
+	}
+
+	.sub-menu li::before {
+		display: none;
+	}
+
+	li ul {
+		display: none;
+	}
+
+	li.current-menu-item,
+	li.current-menu-parent {
+		ul {
+			display: block;
+		}
+	}
+
+	a {
+		color: #aaa;
+	}
+
+	a:hover,
+	.current-menu-item > a,
+	.current-menu-parent > a {
+		color: #000;
+	}
+}
+
+.subpage-title {
+	margin-top: 0;
+}
+
+.page-nav {
+	@extend .page;
+	@include make-md-column(10);
+}

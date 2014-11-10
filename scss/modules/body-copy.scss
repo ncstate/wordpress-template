@@ -1,0 +1,34 @@
+.body-copy {
+	padding: 3em 1em;
+	clear: both;
+
+	font-size: 1.14em;
+
+	.bc-container :first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.bc-container {
+		@media (min-width: $screen-md-min) {
+			width: 85%;
+		}
+	}
+	
+	h1 {
+		@media (max-width: $screen-sm-min) {
+			font-size: 1.7em;
+		}
+	}
+}
+
+.page .body-copy {
+	padding: 0;
+
+	.bc-container {
+		margin: 0;
+		@media (min-width: $screen-sm-min) {
+			width: 85%;
+		}
+	}
+}

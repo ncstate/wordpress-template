@@ -1,0 +1,162 @@
+.body-fluid {
+	.hp-banner {
+		margin: 0 -15px;
+	}
+
+	.site-title {
+		@media (min-width: $screen-sm-min) {
+			margin: 2.5em 0;
+		}
+	}
+}
+
+.left-nav {
+	@include make-md-column(3);
+	@include make-lg-column(2);
+
+	@media (min-width: $screen-sm-min) and (max-width: ($screen-md-min)-1) {
+		width: (5/12)*100%;
+
+		> ul {
+			position: relative;
+			left: 20%;
+			width: 80%;
+		}
+	}
+	
+	height: 110%;
+	padding: 60px 0 0;
+	top: -30px;
+	background-color: #e6e6e6;
+	font-family: 'UniversCondensed';
+	position: fixed;
+
+	> .nav {
+		padding-top: 35px;
+	}
+
+	&.affixed {
+		position: absolute;
+	}
+
+	button {
+		width: 20%;
+		height: 100%;
+		padding-top: 65px;
+		position: absolute;
+		top: 30px;
+		font-size: 3em;
+		display: none;
+		border: none;
+		background-color: inherit;
+		@media (max-width: ($screen-md-min)-1) {
+			display: block;
+		}
+
+		@include transition(background-color 0.3s ease-in-out);
+
+		.glyphicon {
+			vertical-align: top;
+			height: 100%;
+		}	
+	}
+
+	&.is-active button {
+		background-color: #999;
+	}
+		
+	ul {
+
+		a {
+			padding-left: 2em;
+			padding-right: 2em;
+			color: #333;
+			
+			&:hover {
+				background-color: #999;
+				color: #fff;
+				
+				&:after {
+					font-family: "ncsu-icons";
+					content: "i";
+					float: right;
+					width: 0;
+				}
+			}
+		}
+		
+		.current-menu-item > a {
+			background-color: #999;
+			color: #fff !important;
+
+			&:after {
+				font-family: "ncsu-icons";
+				content: "i";
+				float: right;
+				width: 0;
+			}
+		}
+		
+		.current-page-parent ul.sub-menu, .current-menu-item ul.sub-menu {
+			display: block;
+		}
+		
+		ul.sub-menu {
+			padding-left: 0;
+			display: none;
+		
+			li {
+				margin-bottom: 0;
+				margin-left: 0;
+			
+				a {
+					padding: 10px 15px;
+					margin-left: 0;
+					padding-left: 3em;
+					padding-right: 2em;
+					width: 100%;
+					display: block;
+					color: #888;
+					
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+div.left-nav + div{
+	padding-left: 0px;
+	padding-right: 0;
+}
+
+.main-content-container {
+	@include make-xs-column(12);
+	@include make-sm-column(11);
+	@include make-md-column(9);
+	@include make-lg-column(10);
+	padding: 0;
+	background-color: #fff;
+	@include transition(all 0.3s ease-in-out);
+
+	@media (min-width: $screen-sm-min) {
+		position: relative;
+		left: (1/12)*100%;
+	}
+
+	@media (min-width: $screen-md-min) {
+		left: 25%;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		left: (1/6)*100%;
+	}
+	
+	&.is-displaced {
+		@media (min-width: $screen-sm-min) and (max-width: ($screen-md-min)-1) {
+			left: (5/12)*100%;
+		}
+	}
+}

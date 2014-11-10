@@ -1,0 +1,156 @@
+footer {
+	position: relative;
+	background-color: #9a0000;
+	color: #fff;
+	font-size: 0.9em;
+	clear: both;
+	/* 
+	*  I suspect this z-index was only used in the left-nav version.
+	*  It conflicted with dropdown menus so I've removed it for now.
+	*/
+	// z-index: 1001; 
+
+	.main-footer {
+		padding-top: 3em;
+		padding-bottom: 3em;
+		@media (max-width: $screen-md-min){	
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
+	}
+
+	a {
+		color: #fff;
+		
+		&:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+	}
+
+	.footer-address {
+		@include make-sm-column(6);
+		@include make-md-column(3);
+	}
+
+	.footer-title {
+		font-size: 1.6em;
+		font-family: UniversCondensed;
+		margin-top: 0.5em;
+		margin-bottom: 20px;
+	}
+
+	address {
+		font-size: 1.1em;
+		line-height: 1.8;
+	}
+
+	.glyphicon {
+		font-size: 2em;
+		margin-right: 0.75em;
+		vertical-align: bottom;
+	}
+	
+	.social {
+		@include make-sm-column(6);
+		@include make-md-column(4);
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 1.5em;
+		@media (min-width: $screen-sm-min){	
+			margin-left: -17px;
+			clear: both;
+		}
+		@media (min-width: $screen-md-min){	
+			margin: 0;
+			clear: none;
+		}
+		
+		li {
+			margin: 1em 0;
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				display: none;
+			}
+			
+			a {
+				background-color: #cc0000;
+				padding: 1em 1.5em;
+				display: block;
+				width: 80%;
+				max-width: 300px;
+			}
+		}
+	}
+	
+	.resources {
+		@include make-md-column(2.5);
+		margin-bottom: 0;
+		margin-left: 2.3em;
+		@media (min-width: $screen-md-min) {	
+			margin-top: 0.75em;
+			margin-left: inherit;
+		}
+
+		li:before {
+			content: "h";
+			color: #850003;
+			background-color: #fff;
+			margin-right: 16px;
+			font-style: normal;
+			font-weight: normal;
+			padding-right: 0;
+			margin-left: -2.3em;
+		}
+	}
+
+	.sub-footer {
+		width: 100%;
+		background-color: #fff;
+		color: #c00;
+		padding: 15px 0;
+		h4 {
+			font-family: UniversCondensed;
+			font-size: 30px;
+			margin: 0 0 15px 0;
+			padding: 0 15px;
+		}
+		address {
+			padding: 0 15px;
+			margin: 0;
+			span {
+				display: block;
+			}
+		}
+
+		@media (min-width: $screen-sm-min) {
+			address {
+				padding-left: 10px;
+				span {
+					margin: 0 5px;
+					display: inline;
+				}
+			}
+		}
+
+		@media (min-width: $screen-md-min) {
+			h4 {
+				float: left;
+				margin: 0;
+			}
+			address {
+				float: right;
+				max-height: 40px;
+				span {
+					line-height: 3.3;
+				}
+			}
+		}
+	}
+}
