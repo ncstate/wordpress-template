@@ -1,13 +1,12 @@
-# Template Version 1.1 Updates
+# Template Version 1.2 (Beta) Updates
+* ACF PRO (Version 5.1.5)
+Version 1.1 Updates:
 * Widgets are now supported
 * ACF functionality on subpages is now available in shortcode form
 * New events/calendaring system
 * Fixed drop-down menu width bug
 * Fixed other minor CSS bugs
 * Removed TGM plugin requirement/recommendation service
-
-## Requirements
-All three **ACF** plugins found in the theme's `plugins` directory must be installed. Significant portions of the theme rely on the functionality provided by these plugins.
 
 ## Theme Update Info
 The latest version of the template supports several oft requested features, namely widgets and shortcode support. Shortcodes are supported throughout all templates, and widgets are supported on the default page template.
@@ -18,11 +17,11 @@ The **RSS App** is no longer provided by default. A replacement system is in the
 
 ## Getting Started
 General site-wide settings can be found in **NC State Theme Options** in the left-hand nav of the admin pages. There you can choose the type of NC State "Brick" to use and also add tracking code for services such as Google Analytics.
-### Social Media
+
 You also have the option to provide the username of your social media accounts. The theme supports Facebook, Twitter, Instagram, and YouTube; however, not all accounts are required. The social networks to which you provide a username will automatically populate in your site’s footer. The social content will also be available in the social media module on the homepage if you choose to include it on that page.
-### Metadata for SEO and Social Media Sharing
- You can also set metadata for your site. Metadata is additional data that search engines and social networks can use to better describe your site’s content. The search engine description is usually the snippet of text displayed beneath your site’s URL in search engine results. The social media title, teaser text, and image are used for social networks such as Facebook when a URL from your website is shared on social media. The metadata provided in NC State Theme Options will automatically apply to every page on our site. If desired, you can override that content on a page-by-page basis. Providing site-wide and/or page-by-page metadata is not required, but it generally helps with search results.
-### Setting up Homepage and Menus
+
+The NC State Theme Options menu also lets you set other footer content such as resource links and your unit’s contact information. You can also set metadata for your site. Metadata is additional data that search engines and social networks can use to better describe your site’s content. The search engine description is usually the snippet of text displayed beneath your site’s URL in search engine results. The social media title, teaser text, and image are used for social networks such as Facebook when a URL from your website is shared on social media. The metadata provided in NC State Theme Options will automatically apply to every page on our site. If desired, you can override that content on a page-by-page basis. Providing site-wide and/or page-by-page metadata is not required, but it generally helps with search results.
+
 Once you have Wordpress installed and the theme activated, you will need to setup your homepage and menu structure.
 
 You can **create a homepage** by going to ``Pages->Add New``. In the right-hand menu select “Homepage” as the page’s template. You can then configure the page’s modules. Click Publish (or Update) to save the page.
@@ -81,3 +80,6 @@ The syntax to create a callout shortcode is as follows:
 | `link_txt` | Optional. Add text to the end of the cross section that underlines on hover. This is where you would add something like "Learn More". Requires `link='true'`. | Empty string|
 | `link_url` | Required when `link='true'`. Link URL. | Empty string |
 | `color` | Optional. Sets the background color of the cross section. Options are: red, reynolds-red, orange, yellow, green, blue, indigo, gray-lighter, gray-light, gray-dark, and gray-darker. | green |
+
+## Licensing
+This premium theme is for use by the NC State campus community.  The theme includes ACF PRO.  ACF PRO is only availble for use within this theme.  ACF PRO use outside of the theme is a copyright violation.

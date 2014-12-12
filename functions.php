@@ -10,8 +10,11 @@
      **  v.   Short Codes
      ** 
      **/
+	
+	date_default_timezone_set('America/New_York');
 
      include "includes/phpFlickr/phpFlickr.php";
+	 include "acf/acf.php";
 	 include "includes/custom_fields.php";
 	 include "includes/events-calendar/events-calendar.php";
 	 
@@ -538,6 +541,33 @@
         
         return $output;
     }
+	
+	// Include Adavanced Custom Fields Pro
+	add_filter('acf/settings/path', 'my_acf_settings_path');
+ 
+	function my_acf_settings_path( $path ) {
+ 
+	    // update path
+	    $path = get_stylesheet_directory() . '/acf/';
+    
+	    // return
+	    return $path;
+    
+	}
+ 
+	add_filter('acf/settings/dir', 'my_acf_settings_dir');
+ 
+	function my_acf_settings_dir( $dir ) {
+ 
+	    // update path
+	    $dir = get_stylesheet_directory_uri() . '/acf/';
+    
+	    // return
+	    return $dir;
+    
+	}
 
+	include_once( get_stylesheet_directory() . '/acf/acf.php' );
+	include_once( 'acf/date-time/acf-date_time_picker.php');
 
 ?>
