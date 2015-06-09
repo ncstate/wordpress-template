@@ -16,9 +16,9 @@
      include "includes/phpFlickr/phpFlickr.php";
 	 include "acf.php";
 	 include "includes/custom_fields.php";
-	 include "includes/events-calendar/events-calendar.php";
+	 include "includes/ncstate-events/ncstate-events.php";
 	 
-	 add_action('after_setup_theme', 'events_calendar_schedule');
+	 add_action('after_setup_theme', 'ncstate_events_calendar_schedule');
 
     /*****************************************************************************
      ** i.   Wordpress Resets 

@@ -5,19 +5,18 @@ include 'twitter/twitter.php';
 include 'instagram/instagram.php';
 
 function getSocial($social_networks) {
-	$theme = get_option('ncstate_theme');
 	$twitter = array();
 	$facebook = array();
 	$instagram = array();
 	
-	if($theme['opt-twitter'] && in_array('twitter', $social_networks)) {
-		$twitter = getTwitter($theme['opt-twitter']);
+	if(ot_get_option('twitter') && in_array('twitter', $social_networks)) {
+		$twitter = getTwitter(ot_get_option('twitter'));
 	}
-	if($theme['opt-facebook'] && in_array('facebook', $social_networks)) {
-		$facebook = getFacebook($theme['opt-facebook']);
+	if(ot_get_option('facebook') && in_array('facebook', $social_networks)) {
+		$facebook = getFacebook(ot_get_option('facebook'));
 	}
-	if($theme['opt-instagram'] && in_array('instagram', $social_networks)) {
-		$instagram = getInstagram($theme['opt-instagram']);
+	if(ot_get_option('instagram') && in_array('instagram', $social_networks)) {
+		$instagram = getInstagram(ot_get_option('instagram'));
 	}
 	
 	$social = array_merge($twitter, $instagram, $facebook);

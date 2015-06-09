@@ -186,10 +186,8 @@ get_header();
 						include 'modules/body_copy.php';
 
 					elseif ( get_row_layout() == 'cross-section_content'):
-
-						echo '<div class="container' . $fluid . '">';
-							include 'modules/cross_section.php';
-						echo '</div>';
+						
+						include 'modules/cross_section.php';
  
 			        elseif( get_row_layout() == 'story_feed' ):
 			        	
