@@ -1,7 +1,5 @@
 <?php
-/*
-Template Name: News
-*/
+
 require 'includes/layout.php';
 
 get_header(); ?>
