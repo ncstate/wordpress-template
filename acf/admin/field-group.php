@@ -92,11 +92,11 @@ class acf_admin_field_group {
 	*  @date	21/07/2014
 	*  @since	5.0.0
 	*
-	*  @param	$current_screen (object)
+	*  @param	n/a
 	*  @return	n/a
 	*/
 	
-	function current_screen( $current_screen ) {
+	function current_screen() {
 		
 		// validate screen
 		if( !acf_is_screen('acf-field-group') ) {
@@ -561,8 +561,9 @@ class acf_admin_field_group {
 		
 		switch( $options['param'] ) {
 			
+			
 			/*
-			*  Basic
+			*  Post
 			*/
 			
 			case "post_type" :
@@ -573,26 +574,8 @@ class acf_admin_field_group {
 				$choices = acf_get_pretty_post_types( $choices );
 
 				break;
-			
-			
-			case "user_type" :
 				
-				global $wp_roles;
 				
-				$choices = $wp_roles->get_names();
-
-				if( is_multisite() )
-				{
-					$choices['super_admin'] = __('Super Admin');
-				}
-								
-				break;
-				
-			
-			/*
-			*  Post
-			*/
-			
 			case "post" :
 				
 				// get post types
@@ -601,7 +584,7 @@ class acf_admin_field_group {
 				
 						
 				// get posts grouped by post type
-				$groups = acf_get_posts(array(
+				$groups = acf_get_grouped_posts(array(
 					'post_type' => $post_types
 				));
 				
@@ -655,15 +638,17 @@ class acf_admin_field_group {
 			
 			case "post_status" :
 				
-				$choices = array(
-					'publish'	=> __('Publish', 'acf'),
-					'pending'	=> __('Pending Review', 'acf'),
-					'draft'		=> __('Draft', 'acf'),
-					'future'	=> __('Future', 'acf'),
-					'private'	=> __('Private', 'acf'),
-					'inherit'	=> __('Revision', 'acf'),
-					'trash'		=> __('Trash', 'acf')
-				);
+				global $wp_post_statuses;
+				
+				if( !empty($wp_post_statuses) ) {
+					
+					foreach( $wp_post_statuses as $status ) {
+						
+						$choices[ $status->name ] = $status->label;
+						
+					}
+					
+				}
 								
 				break;
 			
@@ -690,7 +675,7 @@ class acf_admin_field_group {
 				
 				
 				// get posts grouped by post type
-				$groups = acf_get_posts(array(
+				$groups = acf_get_grouped_posts(array(
 					'post_type' => 'page'
 				));
 				
@@ -728,7 +713,7 @@ class acf_admin_field_group {
 				$choices = array(
 					'front_page'	=>	__("Front Page",'acf'),
 					'posts_page'	=>	__("Posts Page",'acf'),
-					'top_level'		=>	__("Top Level Page (parent of 0)",'acf'),
+					'top_level'		=>	__("Top Level Page (no parent)",'acf'),
 					'parent'		=>	__("Parent Page (has children)",'acf'),
 					'child'			=>	__("Child Page (has parent)",'acf'),
 				);
@@ -763,6 +748,38 @@ class acf_admin_field_group {
 			/*
 			*  User
 			*/
+			
+			case "current_user" :
+				
+				// viewing
+				$choices = array(
+					'logged_in'		=> __('Logged in', 'acf'),
+					'viewing_front'	=> __('Viewing front end', 'acf'),
+					'viewing_back'	=> __('Viewing back end', 'acf')
+				);
+								
+				break;
+			
+			case "current_user_role" :
+				
+				// global
+				global $wp_roles;
+				
+				
+				// specific roles
+				$choices = $wp_roles->get_names();
+				
+				
+				// multi-site
+				if( is_multisite() ) {
+					
+					$choices = array_merge(array(
+						'super_admin' => __('Super Admin', 'acf')
+					), $choices);
+					
+				}
+				
+				break;
 			
 			case "user_role" :
 				
@@ -892,7 +909,7 @@ class acf_admin_field_group {
 	/*
 	*  ajax_render_field_settings
 	*
-	*  This function can be accessed via an AJAX action and will return the result from the acf_render_field_settings function
+	*  This function will return HTML containing the field's settings based on it's new type
 	*
 	*  @type	function (ajax)
 	*  @date	30/09/13
@@ -919,7 +936,7 @@ class acf_admin_field_group {
 		
 		
 		// verify nonce
-		if( ! wp_verify_nonce($options['nonce'], 'acf_nonce') ) {
+		if( !wp_verify_nonce($options['nonce'], 'acf_nonce') ) {
 		
 			die(0);
 			
@@ -927,7 +944,7 @@ class acf_admin_field_group {
 		
 		
 		// required
-		if( ! $options['type'] ) {
+		if( !$options['type'] ) {
 		
 			die(0);
 			
@@ -945,7 +962,7 @@ class acf_admin_field_group {
 		
 		
 		// render
-		acf_render_field_settings( $field );
+		do_action("acf/render_field_settings/type={$field['type']}", $field);
 		
 		
 		// die
@@ -1010,7 +1027,7 @@ class acf_admin_field_group {
 			$v2 = '<a href="' . admin_url("post.php?post={$field_group['ID']}&action=edit") . '" target="_blank">' . $field_group['title'] . '</a>';
 			
 			echo '<p><strong>' . __('Move Complete.', 'acf') . '</strong></p>';
-			echo  sprintf( __('The %s field can now be found in the %s field group', 'acf'), $v1, $v2 ). '</p>';
+			echo '<p>' . sprintf( __('The %s field can now be found in the %s field group', 'acf'), $v1, $v2 ). '</p>';
 			
 			echo '<a href="#" class="acf-button blue acf-close-popup">' . __("Close Window",'acf') . '</a>';
 			
