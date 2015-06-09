@@ -14,17 +14,9 @@
 	date_default_timezone_set('America/New_York');
 
      include "includes/phpFlickr/phpFlickr.php";
-	 include "acf/acf.php";
+	 include "acf.php";
 	 include "includes/custom_fields.php";
 	 include "includes/events-calendar/events-calendar.php";
-	 
-	 add_action('init', 'include_sub_page_custom_fields');
-	 function include_sub_page_custom_fields() {
-		 $theme = get_option('ncstate_theme');
-		 if($theme['opt-on-page-custom-fields']) {
-			 include "includes/custom_fields_sub_page.php";
-		 }
-	 }
 	 
 	 add_action('after_setup_theme', 'events_calendar_schedule');
 
@@ -541,33 +533,5 @@
         
         return $output;
     }
-	
-	// Include Adavanced Custom Fields Pro
-	add_filter('acf/settings/path', 'my_acf_settings_path');
- 
-	function my_acf_settings_path( $path ) {
- 
-	    // update path
-	    $path = get_stylesheet_directory() . '/acf/';
-    
-	    // return
-	    return $path;
-    
-	}
- 
-	add_filter('acf/settings/dir', 'my_acf_settings_dir');
- 
-	function my_acf_settings_dir( $dir ) {
- 
-	    // update path
-	    $dir = get_stylesheet_directory_uri() . '/acf/';
-    
-	    // return
-	    return $dir;
-    
-	}
-
-	include_once( get_stylesheet_directory() . '/acf/acf.php' );
-	include_once( 'acf/date-time/acf-date_time_picker.php');
 
 ?>
