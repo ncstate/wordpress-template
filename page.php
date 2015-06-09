@@ -3,7 +3,7 @@ require 'includes/layout.php';
 get_header(); ?>
 			
 			<div class='l-header'>
-				<div class='container<?php echo $fluid; ?>'>
+				<div class='container'>
 					<div class='page-lead'>
 						<h1><?php echo get_the_title() ?></h1>
 						<?php
@@ -19,6 +19,7 @@ get_header(); ?>
 			</div>
 
 			<div class='container'>
+				<?php get_sidebar('page_left'); ?>
 				<section role="main" class='l-main page'>
 					<?php 	
 							if ( have_posts() ):
@@ -31,7 +32,7 @@ get_header(); ?>
 							endif;	 
 					?>
 				</section>
-				<?php get_sidebar("page"); ?>
+				<?php get_sidebar('page_right'); ?>
 			</div>
 
 <?php get_footer(); ?>
