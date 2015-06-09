@@ -247,16 +247,16 @@
     function ncsu_widgets_init() {
 
         register_sidebar( array(
-            'name' => 'Page Right Sidebar',
-            'id' => 'page_right',
+            'name' => 'Page Left Sidebar',
+            'id' => 'page_left',
             'before_widget' => '<div class="sb-section %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h2>',
             'after_title' => '</h2>',
         ) );
-        register_sidebar( array(
-            'name' => 'Page Left Sidebar',
-            'id' => 'page_left',
+		register_sidebar( array(
+            'name' => 'Page Right Sidebar',
+            'id' => 'page_right',
             'before_widget' => '<div class="sb-section %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h2>',
