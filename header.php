@@ -31,7 +31,11 @@
 	    <![endif]-->
 
 	    <!-- NC State Utility Bar -->
-	    <script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?maxWidth=1500"></script>
+		<?php if(ot_get_option('cse_id')): ?>
+	    	<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=<?php echo ot_get_option('cse_id'); ?>&placeholder=Search"></script>
+		<?php else: ?>
+			<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php"></script>
+		<?php endif; ?>
 		
 		<?php wp_head(); ?> 
 	</head>
