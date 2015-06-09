@@ -1,12 +1,1683 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17908",
+"creatorBuild": "19033",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/404.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/acf.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/acf.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/admin.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/admin.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/field-group.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/field-group.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/field-groups.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/field-groups.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/settings-addons.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/settings-addons.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/settings-export.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/settings-export.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/settings-info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/settings-info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/update.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/update.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/updates\/5.0.0.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/updates\/5.0.0.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/field-group-field-conditional-logic.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/field-group-field-conditional-logic.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/field-group-field.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/field-group-field.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/field-group-fields.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/field-group-fields.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/field-group-locations.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/field-group-locations.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/field-group-options.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/field-group-options.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/settings-addons.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/settings-addons.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/settings-export-generate.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/settings-export-generate.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/settings-export.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/settings-export.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/settings-info.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/settings-info.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/update-network.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/update-network.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/update-notice.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/update-notice.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/admin\/views\/update.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/admin\/views\/update.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/api\/api-field-group.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/api\/api-field-group.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/api\/api-field.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/api\/api-field.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/api\/api-helpers.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/api\/api-helpers.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/api\/api-template.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/api\/api-template.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/api\/api-value.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/api\/api-value.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/css\/acf-field-group.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/css\/acf-field-group.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/css\/acf-global.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/css\/acf-global.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/css\/acf-input.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/css\/acf-input.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/images\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8342,
+		"inputAbbreviatedPath": "\/acf\/assets\/images\/sprite.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/images\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/images\/sprite@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19074,
+		"inputAbbreviatedPath": "\/acf\/assets\/images\/sprite@2x.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/images\/sprite@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_2EA2CC_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_2EA2CC_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_2EA2CC_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_aaaaaa_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 212,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_E14D43_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_E14D43_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_E14D43_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F0F0F0_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F0F0F0_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F0F0F0_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F9F9F9_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F9F9F9_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_F9F9F9_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_ffffff_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 208,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_ffffff_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_0_ffffff_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_75_ffffff_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 208,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_75_ffffff_40x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_flat_75_ffffff_40x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-bg_highlight-soft_0_ffffff_1x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 203,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_highlight-soft_0_ffffff_1x100.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-bg_highlight-soft_0_ffffff_1x100.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_222222_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6922,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_222222_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_222222_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_2EA2CC_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4549,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_2EA2CC_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_2EA2CC_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_444444_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6992,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_444444_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_444444_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_454545_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6992,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_454545_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_454545_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_DDDDDD_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6923,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_DDDDDD_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_DDDDDD_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/images\/ui-icons_ffffff_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6299,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_ffffff_256x240.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/images\/ui-icons_ffffff_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/jquery-ui-1.10.4.custom.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/jquery-ui-1.10.4.custom.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/inc\/datepicker\/jquery-ui-1.10.4.custom.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/datepicker\/jquery-ui-1.10.4.custom.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/inc\/select2\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/component.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/component.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/component-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/acf\/assets\/inc\/select2\/select2-bootstrap.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2-bootstrap.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/inc\/select2\/select2.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/assets\/inc\/select2\/select2.jquery.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.jquery.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.jquery-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.min.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 613,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ar.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ar.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ar-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_az.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_az.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_az-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_bg.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_bg.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_bg-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ca.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ca.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ca-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_cs.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_cs.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_cs-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_da.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_da.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_da-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_de.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_de.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_de-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_el.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_el.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_el-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_es.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_es.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_es-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_et.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_et.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_et-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_eu.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_eu.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_eu-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_fa.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_fa.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_fa-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_fi.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_fi.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_fi-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_fr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_fr.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_fr-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_gl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_gl.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_gl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_he.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_he.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_he-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_hr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_hr.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_hr-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_hu.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_hu.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_hu-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_id.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_id.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_id-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_is.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_is.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_is-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_it.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_it.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_it-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ja.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ja.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ja-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ka.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ka.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ka-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ko.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ko.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ko-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_lt.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_lt.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_lt-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_lv.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_lv.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_lv-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_mk.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_mk.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_mk-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ms.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ms.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ms-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_nl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_nl.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_nl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_no.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_no.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_no-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_pl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_pl.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_pl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_pt-BR.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_pt-BR.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_pt-BR-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_pt-PT.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_pt-PT.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_pt-PT-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ro.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ro.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ro-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_rs.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_rs.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_rs-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ru.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ru.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ru-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_sk.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_sk.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_sk-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_sv.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_sv.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_sv-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_th.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_th.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_th-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_tr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_tr.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_tr-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_ug-CN.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_ug-CN.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_ug-CN-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_uk.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_uk.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_uk-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_vi.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_vi.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_vi-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_zh-CN.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_zh-CN.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_zh-CN-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2_locale_zh-TW.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2_locale_zh-TW.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/min\/select2_locale_zh-TW-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/inc\/select2\/select2x2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 845,
+		"inputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2x2.png",
+		"outputAbbreviatedPath": "\/acf\/assets\/inc\/select2\/select2x2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/acf\/assets\/js\/acf-field-group.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/js\/acf-field-group.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/js\/min\/acf-field-group-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/js\/acf-field-group.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/js\/acf-field-group.min.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/js\/min\/acf-field-group.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/js\/acf-input.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/js\/acf-input.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/js\/min\/acf-input-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/assets\/js\/acf-input.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/assets\/js\/acf-input.min.js",
+		"outputAbbreviatedPath": "\/acf\/assets\/js\/min\/acf-input.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/core\/ajax.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/ajax.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/compatibility.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/compatibility.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/field.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/field.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/input.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/input.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/json.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/json.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/local.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/local.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/location.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/location.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/media.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/media.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/revisions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/revisions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/third_party.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/third_party.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/core\/wpml.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/core\/wpml.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/checkbox.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/checkbox.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/color_picker.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/color_picker.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/date_picker.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/date_picker.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/email.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/email.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/file.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/file.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/google-map.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/google-map.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/image.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/image.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/message.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/message.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/number.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/number.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/oembed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/oembed.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/page_link.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/page_link.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/password.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/password.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/post_object.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/post_object.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/radio.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/radio.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/relationship.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/relationship.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/select.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/select.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/tab.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/tab.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/taxonomy.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/taxonomy.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/text.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/text.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/textarea.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/textarea.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/true_false.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/true_false.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/url.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/url.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/user.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/user.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/fields\/wysiwyg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/fields\/wysiwyg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/attachment.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/attachment.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/comment.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/comment.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/post.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/post.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/taxonomy.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/taxonomy.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/user.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/user.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/forms\/widget.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/forms\/widget.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/acf-pro.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/acf-pro.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/admin\/options-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/admin\/options-page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/admin\/settings-updates.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/admin\/settings-updates.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/admin\/views\/options-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/admin\/views\/options-page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/admin\/views\/settings-updates.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/admin\/views\/settings-updates.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/api\/api-options-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/api\/api-options-page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/api\/api-pro.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/api\/api-pro.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/assets\/css\/acf-pro-field-group.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/css\/acf-pro-field-group.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/assets\/css\/acf-pro-input.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/css\/acf-pro-input.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/assets\/js\/acf-pro-field-group.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/js\/acf-pro-field-group.js",
+		"outputAbbreviatedPath": "\/acf\/pro\/assets\/js\/min\/acf-pro-field-group-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/pro\/assets\/js\/acf-pro-field-group.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/js\/acf-pro-field-group.min.js",
+		"outputAbbreviatedPath": "\/acf\/pro\/assets\/js\/min\/acf-pro-field-group.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/pro\/assets\/js\/acf-pro-input.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/js\/acf-pro-input.js",
+		"outputAbbreviatedPath": "\/acf\/pro\/assets\/js\/min\/acf-pro-input-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/pro\/assets\/js\/acf-pro-input.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/assets\/js\/acf-pro-input.min.js",
+		"outputAbbreviatedPath": "\/acf\/pro\/assets\/js\/min\/acf-pro-input.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/acf\/pro\/core\/updates.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/core\/updates.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/fields\/flexible-content.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/fields\/flexible-content.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/fields\/gallery.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/fields\/gallery.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf\/pro\/fields\/repeater.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf\/pro\/fields\/repeater.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -57,25 +1728,46 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/admin\/redux-extensions\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-extensions\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/admin\/redux-extensions\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
-	"\/admin\/redux-framework\/bootstrap_tests.php": {
-		"fileType": 8192,
+	"\/admin\/redux-framework\/CHANGELOG.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/bootstrap_tests.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/admin\/redux-framework\/class.redux-plugin.php": {
 		"fileType": 8192,
@@ -86,17 +1778,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/codestyles\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/codestyles\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/codestyles\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/admin\/redux-framework\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/admin\/redux-framework\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/admin\/redux-framework\/Gruntfile.js": {
 		"fileType": 64,
@@ -118,17 +1851,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/admin\/redux-framework\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/admin\/redux-framework\/redux-framework.php": {
 		"fileType": 8192,
@@ -158,6 +1911,64 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/admin.less",
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/admin.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/color-picker\/color-picker.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/color-picker\/color-picker.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/color-picker\/color-picker.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/color-picker\/color-picker.less",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/css\/color-picker.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/import_export\/import_export.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/import_export\/import_export.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/import_export\/import_export.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/import_export\/import_export.less",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/css\/import_export.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -398,6 +2209,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/vendor\/jquery-ui-bootstrap\/jquery-ui-1.10.0.custom.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/vendor\/jquery-ui-bootstrap\/jquery-ui-1.10.0.custom.less",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/css\/vendor\/css\/jquery-ui-1.10.0.custom.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/admin\/redux-framework\/ReduxCore\/assets\/css\/vendor\/qtip\/jquery.qtip.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -548,23 +2379,45 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/color-picker.js": {
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/import_export.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/color-picker.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/min\/color-picker-ck.js",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/import_export.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/min\/import_export-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/color-picker.min.js": {
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/import_export.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/color-picker.min.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/color-picker\/min\/color-picker.min-ck.js",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/import_export.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/import_export\/min\/import_export.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/media.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/media.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/min\/media-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/media.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/media.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/media\/min\/media.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -631,6 +2484,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/jquery.serializeForm.js",
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/min\/jquery.serializeForm-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/jquery.typewatch.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/jquery.typewatch.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/min\/jquery.typewatch-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -714,16 +2578,25 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/select2-bootstrap.css": {
 		"fileType": 16,
@@ -742,6 +2615,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/select2.jquery.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/select2.jquery.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/select2.jquery-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/assets\/js\/vendor\/select2\/select2.js": {
 		"fileType": 64,
@@ -1287,6 +3171,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/class.p.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/class.p.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_filesystem.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_filesystem.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_functions.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1310,6 +3212,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_instances.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_themecheck.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/class.redux_themecheck.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1729,6 +3640,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/ace_editor\/vendor\/worker-html.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/ace_editor\/vendor\/worker-html.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/ace_editor\/vendor\/min\/worker-html-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/ace_editor\/vendor\/worker-javascript.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1954,6 +3876,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/min\/field_checkbox-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -1973,6 +3906,17 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/min\/field_checkbox.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/checkbox\/field_checkbox.php": {
 		"fileType": 8192,
@@ -1999,34 +3943,27 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.css": {
-		"fileType": 16,
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.js": {
+		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.less",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/css\/field_color.css",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/min\/field_color-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/min\/field_color.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color\/field_color.php": {
 		"fileType": 8192,
@@ -2062,6 +3999,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/min\/field_color_gradient-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2081,6 +4029,17 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/min\/field_color_gradient.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_gradient\/field_color_gradient.php": {
 		"fileType": 8192,
@@ -2210,14 +4169,32 @@
 		"processed": 0
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_rgba\/vendor\/minicolors\/readme.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_rgba\/vendor\/minicolors\/readme.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/color_rgba\/vendor\/minicolors\/readme.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/date\/field_date.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/date\/field_date.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -2231,6 +4208,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/date\/field_date.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/date\/field_date.less",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/css\/field_date.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/date\/field_date.min.js": {
 		"fileType": 64,
@@ -2346,6 +4343,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/min\/field_editor-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2365,6 +4373,17 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/min\/field_editor.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/editor\/field_editor.php": {
 		"fileType": 8192,
@@ -2421,71 +4440,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/min\/field_group-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.less",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/css\/field_group.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/group\/field_group.scss",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/css\/field_group.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/image_select\/field_image_select.css": {
 		"fileType": 16,
@@ -2563,57 +4517,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/min\/field_import_export-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.less",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/css\/field_import_export.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.min.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/min\/field_import_export.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/import_export\/field_import_export.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2686,6 +4589,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/min\/field_link_color-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2706,6 +4620,17 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/min\/field_link_color.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/link_color\/field_link_color.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2723,17 +4648,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/min\/field_media-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.less": {
 		"allowInsecureImports": 0,
@@ -2754,17 +4668,6 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
-		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.min.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/min\/field_media.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/media\/field_media.php": {
 		"fileType": 8192,
@@ -3194,32 +5097,32 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.css": {
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.css",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.js": {
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/min\/jquery.nouislider-ck.js",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/min\/redux.jquery.nouislider-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.min.js": {
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/jquery.nouislider.min.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/min\/jquery.nouislider.min-ck.js",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/redux.jquery.nouislider.min.js",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/slider\/vendor\/nouislider\/min\/redux.jquery.nouislider.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -3638,17 +5541,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/spinner\/vendor\/jquery.typewatch.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/spinner\/vendor\/jquery.typewatch.js",
-		"outputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/spinner\/vendor\/min\/jquery.typewatch-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/spinner\/vendor\/spinner_custom.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -3886,11 +5778,11 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/typography\/googlefonts.html": {
+	"\/admin\/redux-framework\/ReduxCore\/inc\/fields\/typography\/googlefonts.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/typography\/googlefonts.html",
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/fields\/typography\/googlefonts.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3909,6 +5801,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/lib.redux_instances.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/p.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/p.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4066,6 +5967,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/validation\/numeric_not_empty\/validation_numeric_not_empty.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/validation\/numeric_not_empty\/validation_numeric_not_empty.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/admin\/redux-framework\/ReduxCore\/inc\/validation\/preg_replace\/validation_preg_replace.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4089,6 +5999,108 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/validation\/url\/validation_url.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/ReduxCore\/inc\/welcome.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/ReduxCore\/inc\/welcome.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/sample\/barebones-config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/barebones-config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/sample\/info-html.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/info-html.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/redux-framework\/sample\/patterns\/tree_bark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42360,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/tree_bark.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/tree_bark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/patterns\/triangular.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 210,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/triangular.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/triangular.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/patterns\/triangular_@2X.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 212,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/triangular_@2X.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/triangular_@2X.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/patterns\/wild_flowers.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47151,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/wild_flowers.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/patterns\/wild_flowers.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/presets\/preset1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18478,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/presets\/preset1.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/presets\/preset1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/presets\/preset2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33523,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/presets\/preset2.png",
+		"outputAbbreviatedPath": "\/admin\/redux-framework\/sample\/presets\/preset2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/admin\/redux-framework\/sample\/sample-config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/redux-framework\/sample\/sample-config.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4125,6 +6137,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/full-sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/functions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/header.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4173,17 +6203,73 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/includes\/custom_fields.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/custom_fields.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/custom_fields_sub_page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/custom_fields_sub_page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/events-calendar\/custom-fields.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/events-calendar\/custom-fields.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/events-calendar\/events-calendar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/events-calendar\/events-calendar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/includes\/facebook\/facebook-php-sdk-master\/changelog.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/changelog.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/changelog.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/includes\/facebook\/facebook-php-sdk-master\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/includes\/facebook\/facebook-php-sdk-master\/examples\/example.php": {
 		"fileType": 8192,
@@ -4204,16 +6290,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/includes\/facebook\/facebook-php-sdk-master\/readme.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/readme.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/includes\/facebook\/facebook-php-sdk-master\/readme.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/includes\/facebook\/facebook-php-sdk-master\/src\/base_facebook.php": {
 		"fileType": 8192,
@@ -4259,6 +6354,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/instagram\/Instagram-PHP-API-master\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/instagram\/Instagram-PHP-API-master\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/includes\/instagram\/Instagram-PHP-API-master\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/includes\/instagram\/Instagram-PHP-API-master\/example\/assets\/instagram-big.png": {
 		"fileType": 32768,
@@ -4390,24 +6496,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/tgm\/class-tgm-plugin-activation.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/tgm\/class-tgm-plugin-activation.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/includes\/tgm\/settings.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/tgm\/settings.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/includes\/twitter\/twitter.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4485,16 +6573,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/includes\/twitter\/twitteroauth-master\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/twitter\/twitteroauth-master\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/includes\/twitter\/twitteroauth-master\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/includes\/twitter\/twitteroauth-master\/redirect.php": {
 		"fileType": 8192,
@@ -4552,16 +6649,35 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/picturefill.min.js": {
-		"fileType": 64,
+	"\/migrations\/1.1.0.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/picturefill.min.js",
-		"outputAbbreviatedPath": "\/js\/min\/picturefill.min-ck.js",
+		"inputAbbreviatedPath": "\/migrations\/1.1.0.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/migrations\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/migrations\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/migrations\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/modules\/body_copy.php": {
 		"fileType": 8192,
@@ -4626,14 +6742,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/page-news.php": {
+	"\/page.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-news.php",
+		"inputAbbreviatedPath": "\/page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/screenshot.png": {
 		"fileType": 32768,
@@ -4735,6 +6872,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/global.scss",
 		"outputAbbreviatedPath": "\/css\/global.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/header.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/header.scss",
+		"outputAbbreviatedPath": "\/css\/header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -4870,6 +7023,54 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/page-nav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/page-nav.scss",
+		"outputAbbreviatedPath": "\/css\/page-nav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/page.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/page.scss",
+		"outputAbbreviatedPath": "\/css\/page.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/sidebar.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/sidebar.scss",
+		"outputAbbreviatedPath": "\/css\/sidebar.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/single.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -4881,6 +7082,22 @@
 		"outputAbbreviatedPath": "\/css\/single.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/style.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/style.scss",
+		"outputAbbreviatedPath": "\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -4902,6 +7119,63 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/widgets\/recent_entries.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/widgets\/recent_entries.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/recent_entries.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/widgets\/rss.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/widgets\/rss.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/rss.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/widgets\/search.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/widgets\/search.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/search.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sidebar-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sidebar-page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sidebar.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4919,6 +7193,15 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -4928,8 +7211,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "ncstate-web-template",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "Campus Template",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_brown"
 	},
 "projectSettings": {
@@ -4969,6 +7252,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -5062,6 +7349,10 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -5118,6 +7409,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -5140,6 +7435,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -5178,6 +7477,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -5191,6 +7494,10 @@
 			"flagValue": 4
 			},
 		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5238,6 +7545,10 @@
 			"active": 0,
 			"flagValue": 4
 			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -5256,6 +7567,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -5306,6 +7621,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"regexp": {
 			"active": 1,
 			"flagValue": -1
@@ -5323,6 +7642,10 @@
 			"flagValue": -1
 			},
 		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5348,6 +7671,10 @@
 			},
 		"unused": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {
@@ -5473,6 +7800,14 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
@@ -5500,9 +7835,18 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
@@ -5526,6 +7870,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -5550,12 +7895,17 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5588,6 +7938,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5631,6 +7985,14 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -5643,8 +8005,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
