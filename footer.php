@@ -25,16 +25,20 @@
 				<?php
 				$links = ot_get_option('resource_links');
 				if ($links !== NULL) {
+					$num = count($links);
+					$i=1;
 					foreach($links as $link) {
 						if ( ! empty($link)) {
 							echo '<li><a href="' . $link['url'] . '">' . $link['title'] . '</a></li>';
 						}
+						if($i==ceil($num/2)) {
+							echo '</ul>';
+							echo '<ul class="resources ncstate-padded-list" aria-label="Additional resources continued">';
+						}
+						$i++;
 					}
 				} 
 				?>
-			</ul>
-			<ul class="resources ncstate-padded-list" aria-label="Additional resources continued">
-				
 			</ul>
 		</div>
 		<div class="sub-footer">
