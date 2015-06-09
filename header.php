@@ -33,49 +33,12 @@
 	    <!-- NC State Utility Bar -->
 	    <script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?maxWidth=1500"></script>
 		
-		<!-- Social Networks Metadata -->
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="<?php echo (get_field('social_media_image') ? get_field('social_media_image') : $theme['opt-social-image']['url']); ?>" />
-		<meta name="twitter:card" value="summary" />
-		<meta name="twitter:site" value="@<?php echo $theme['opt-twitter']; ?>" />
-
-		<meta name="description" content="<?php echo (get_field('search_engine_description') ? get_field('search_engine_description') : $theme['opt-meta-description']); ?>" /> 
-		<meta property="og:url" content="<?php echo get_permalink(); ?>" />
-		<meta property="og:title" content="<?php echo (get_field('social_media_title') ? get_field('social_media_title') : $theme['opt-social-title']); ?>" />
-		<meta property="og:description" content="<?php echo (get_field('social_media_description') ? get_field('social_media_description') : $theme['opt-social-description']); ?>" />
-		<meta property="twitter:url" content="<?php echo get_permalink(); ?>" />
-		<meta property="twitter:title" content="<?php echo (get_field('social_media_title') ? get_field('social_media_title') : $theme['opt-social-title']); ?>" />
-		<meta property="twitter:description" content="<?php echo (get_field('social_media_description') ? get_field('social_media_description') : $theme['opt-social-description']); ?>" />
-		
 		<?php wp_head(); ?> 
 	</head>
 	
-	<body <?php echo ($layout=="left" ? 'class="body-fluid"' : ''); ?>>
+	<body>
 		
 		<div id="ncstate-utility-bar"></div>
-		
-		<?php if($layout=="left") : ?>
-				<nav class="left-nav hidden-xs">
-				<button type="button" id="leftNav-menu-toggle">
-				    <span class="sr-only">Toggle navigation</span>
-					<span class="glyphicon glyphicon-menu"></span>
-				</button>
-				<?php 
-					$args = array(
-						'container' => false,
-						'menu_class' => 'nav',
-						'depth' => 0,
-						'title_li' => false,
-						'theme_location' => 'header-menu',
-						);
-					
-					wp_nav_menu($args);
-				?>
-				</nav>
-				
-				<div class="main-content-container">
-		<?php endif; ?>
-
 		<header>
 			<div class='container<?php echo $fluid; ?>'>
 				<div class='site-title'>
@@ -83,6 +46,7 @@
 				       <span class="sr-only">Toggle navigation</span>
 				       <span class="glyphicon glyphicon-menu" id="menu-toggle"></span>
 				    </button>
+					<?php $brick = ot_get_option('brick'); ?>
 				    <a href="<?php echo home_url(); ?>">
 						<img src='<?php bloginfo('template_directory'); ?>/img/ncstate-brick-<?php echo $brick; ?>-red.png' alt="NC State"/>
 						<?php
