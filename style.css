@@ -846,6 +846,15 @@ header {
       .page.full-width, .full-width.page-nav {
         float: left;
         width: 100%; } }
+  .page.half-width, .half-width.page-nav {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .page.half-width, .half-width.page-nav {
+        float: left;
+        width: 50%; } }
   .page > :first-child, .page-nav > :first-child {
     margin-top: 7px; }
 

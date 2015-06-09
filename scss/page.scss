@@ -9,6 +9,10 @@
   &.full-width {
     @include make-md-column(12);
   }
+  
+  &.half-width {
+	  @include make-md-column(6);
+  }
 
   > :first-child {
     margin-top: 7px;
