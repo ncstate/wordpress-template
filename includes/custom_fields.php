@@ -3,47 +3,6 @@
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_featured-video',
-		'title' => 'Featured Video',
-		'fields' => array (
-			array (
-				'key' => 'field_53849a0043c39',
-				'label' => 'Video ID',
-				'name' => 'video_id',
-				'type' => 'text',
-				'instructions' => 'Overrides Featured Image.
-	
-	Paste the ID of the YouTube video you would like to embed. 
-	
-	You can find the ID on YouTube by clicking "Share".	 The ID is everything that comes after "http://youtu.be/".	 For example, the ID of http://youtu.be/zmx_RF-4aII is "zmx_RF-4aII".',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'none',
-				'maxlength' => '',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'post',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'side',
-			'layout' => 'default',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
-	register_field_group(array (
 		'id' => 'acf_home-page',
 		'title' => 'Home Page',
 		'fields' => array (
@@ -621,50 +580,10 @@ if(function_exists("register_field_group"))
 		'location' => array (
 			array (
 				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-				array (
 					'param' => 'page_template',
 					'operator' => '==',
 					'value' => 'page-home.php',
 					'order_no' => 1,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-				0 => 'the_content',
-				1 => 'featured_image',
-			),
-		),
-		'menu_order' => 0,
-	));
-	register_field_group(array (
-		'id' => 'acf_news',
-		'title' => 'News',
-		'fields' => array (
-			array (
-				'key' => 'field_5399b8b5f5634',
-				'label' => 'Template Info',
-				'name' => '',
-				'type' => 'message',
-				'message' => 'This page is auto-generated with the <a href="edit.php">latests Posts</a> on your site.	Only the title of the page (above) and, if desired, custom metadata need to be set on this page.',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'page-news.php',
-					'order_no' => 0,
 					'group_no' => 0,
 				),
 			),
@@ -710,7 +629,7 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group(array (
+	/*register_field_group(array (
 		'id' => 'acf_text-page',
 		'title' => 'Text Page',
 		'fields' => array (
@@ -910,8 +829,8 @@ if(function_exists("register_field_group"))
 			),
 		),
 		'menu_order' => 0,
-	));
-	register_field_group(array (
+	)); */
+	/*register_field_group(array (
 		'id' => 'acf_section-description',
 		'title' => 'Section Description',
 		'fields' => array (
@@ -963,144 +882,5 @@ if(function_exists("register_field_group"))
 			),
 		),
 		'menu_order' => 1,
-	));
-	register_field_group(array (
-		'id' => 'acf_metadata',
-		'title' => 'Metadata',
-		'fields' => array (
-			array (
-				'key' => 'field_536ba962ddb00',
-				'label' => 'Custom Metadata?',
-				'name' => 'custom_metadata',
-				'type' => 'radio',
-				'instructions' => 'Information for search engines and social media sharing.	By default each page uses the site-wide metadata set in "NC State Theme Options."
-	<br /><br />
-	\'Yes\' will allow you to customize that information for this specific page.',
-				'choices' => array (
-					'true' => 'Yes',
-					'false' => 'No',
-				),
-				'other_choice' => 0,
-				'save_other_choice' => 0,
-				'default_value' => 'false',
-				'layout' => 'horizontal',
-			),
-			array (
-				'key' => 'field_536ba953ddaff',
-				'label' => 'Search Engine Description',
-				'name' => 'search_engine_description',
-				'type' => 'text',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_536ba962ddb00',
-							'operator' => '==',
-							'value' => 'true',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_536ba98c89af7',
-				'label' => 'Social Media Title',
-				'name' => 'social_media_title',
-				'type' => 'text',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_536ba962ddb00',
-							'operator' => '==',
-							'value' => 'true',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_536ba99789af8',
-				'label' => 'Social Media Description',
-				'name' => 'social_media_description',
-				'type' => 'text',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_536ba962ddb00',
-							'operator' => '==',
-							'value' => 'true',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_536ba9a289af9',
-				'label' => 'Social Media Image',
-				'name' => 'social_media_image',
-				'type' => 'image',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'field_536ba962ddb00',
-							'operator' => '==',
-							'value' => 'true',
-						),
-					),
-					'allorany' => 'all',
-				),
-				'save_format' => 'url',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'post',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 100,
-	));
+	));*/
 }

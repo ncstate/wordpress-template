@@ -23,9 +23,9 @@ get_header();
 
 			<div class='container<?php echo $fluid; ?>'>
 				<section class='l-main post'>
-					<?php if ( get_field('video_id') ) : ?>
+					<?php if ( $video_id = get_post_meta('video_id', true) ) : ?>
 						<div class="featured-video">
-							<iframe width="960" height="720" src="<?php echo '//www.youtube.com/embed/' . get_field('video_id') . ''; ?>" frameborder="0" allowfullscreen></iframe>
+							<iframe width="960" height="720" src="<?php echo '//www.youtube.com/embed/' . $video_id . ''; ?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 					<?php elseif ( has_post_thumbnail() ) : ?>
 						<picture>
