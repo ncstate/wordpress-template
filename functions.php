@@ -18,8 +18,6 @@
 	 include "includes/custom_fields.php";
 	 include "includes/ncstate-events/ncstate-events.php";
 	 
-	 add_action('after_setup_theme', 'ncstate_events_calendar_schedule');
-	 
 	 // Include OptionTree theme options
 	 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
 	 require( trailingslashit( get_template_directory() ) . 'includes/theme-options.php' );

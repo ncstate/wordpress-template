@@ -50,8 +50,7 @@
 				       <span class="sr-only">Toggle navigation</span>
 				       <span class="glyphicon glyphicon-menu" id="menu-toggle"></span>
 				    </button>
-					<?php $brick = '2x1'; ?>
-					<?php $brick = ot_get_option('brick'); ?>
+					<?php $brick = (ot_get_option('brick') ? ot_get_option('brick') : '2x1'); ?>
 				    <a href="<?php echo home_url(); ?>">
 						<img src='<?php bloginfo('template_directory'); ?>/img/ncstate-brick-<?php echo $brick; ?>-red.png' alt="NC State"/>
 						<?php
