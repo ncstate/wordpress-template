@@ -114,18 +114,7 @@
 	add_filter('image_size_names_choose', 'remove_default_image_sizes');
 
     function register_my_menus() {
-		$pages = get_pages(
-			array(
-				 'parent' => 0,
-				 'post_type' => 'page',
-				 'post_status' => 'publish',
-			 )
-		);
-		$menus = array();
-		foreach($pages as $page) {
-			$menus[$page->post_name."-menu"] = $page->post_title;
-		}
-		$menus['header-menu'] = "Header";
+		$menus['primary-menu'] = "Primary";
         register_nav_menus($menus);    
     }
     add_action( 'init', 'register_my_menus' );
@@ -301,17 +290,7 @@
 		echo "<p>New pages can be created in the <a href='edit.php?post_type=page'>Pages menu</a>.  Pages have four different template options: Home, News, Page with Nav, and Default Template.  The 'Home Page' should be used to create a page that will act as your homepage.  'News' can be used to display all of your <a href='edit.php'>Posts</a>.  'Page with Nav' or 'Default Template' will generally be used for all of your sub-pages.</p>";
 		echo "<b>Full Documentation</b>";
 		echo "<p>The full theme documentation can be found at <a href='http://brand.ncsu.edu/downloads/template-documentation-1-1.php' target='_blank'>brand.ncsu.edu</a>.</p>";
-	 } 
-	 
-	 //Redux Framework include
-	 require get_template_directory() . '/admin/admin-init.php';
-	 
-	 //Used to remove Comments section from wp-admin
-	 function remove_menus() {
-		 remove_menu_page( 'edit-comments.php' );
 	 }
-	 
-	 add_action( 'admin_menu', 'remove_menus' );
 	 
 	 //Adding special styles for admin pages so that utility bar and WP menu bar don't overlap
 	 if(is_user_logged_in()) {
