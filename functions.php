@@ -19,6 +19,13 @@
 	 include "includes/ncstate-events/ncstate-events.php";
 	 
 	 add_action('after_setup_theme', 'ncstate_events_calendar_schedule');
+	 
+	 // Include OptionTree theme options
+	 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+	 require( trailingslashit( get_template_directory() ) . 'includes/theme-options.php' );
+	 add_filter( 'ot_show_pages', '__return_false' );
+	 add_filter( 'ot_theme_mode', '__return_true' );
+	 add_filter( 'ot_meta_boxes', '__return_false' );
 
     /*****************************************************************************
      ** i.   Wordpress Resets 
