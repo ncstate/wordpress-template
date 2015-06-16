@@ -59,12 +59,12 @@ function custom_theme_options() {
           array(
             'value'       => '2x1',
             'label'       => __( '2x1', 'wordpress-template' ),
-            'src'         => '/wp-content/themes/campus-template/img/ncstate-brick-2x1-red.png'
+            'src'         => get_stylesheet_directory_uri() . '/img/ncstate-brick-2x1-red.png'
           ),
           array(
             'value'       => '2x2',
             'label'       => __( '2x2', 'wordpress-template' ),
-            'src'         => '/wp-content/themes/campus-template/img/ncstate-brick-2x2-red.png'
+            'src'         => get_stylesheet_directory_uri() . '/img/ncstate-brick-2x2-red.png'
           )
         )
       ),
