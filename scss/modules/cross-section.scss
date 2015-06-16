@@ -1,10 +1,40 @@
 .cross-section {
 	font-family: "Glypha LT W01 55 Roman" !important;
+	margin: 21px 0;
+	
+	.cross-section-img, .cross-section-text {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		
+		@media (min-width: $screen-sm-min) {
+			display: table-cell;
+			vertical-align: middle;
+			float: none !important;
+		}
+	}
+
+	.cross-section-img {
+		float: left;
+		padding: 0;
+		
+		img {
+			margin: 20px 0;
+		}
+	}
+	
+	.cross-section-text {
+		float: left;
+		padding: 1em 2em;
+	}
+}
+
+/*.cross-section {
+	font-family: "Glypha LT W01 55 Roman" !important;
 	display: table;
 	overflow: hidden;
 	table-layout: fixed;
 	width: 100%;
-	margin: 21px 0;
+
 	@media (min-width: $screen-md-min) {
 		width: 85%;
 	}
@@ -54,7 +84,7 @@
 	&:hover .link-text {
 		text-decoration: underline;
 	}
-}
+}*/
 
 .body-copy + .container > a > .cross-section {
 	margin-top: 0;

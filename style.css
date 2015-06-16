@@ -544,16 +544,8 @@ License: Free to All NC State University staff, students, and departments.
 
 .cross-section {
   font-family: "Glypha LT W01 55 Roman" !important;
-  display: table;
-  overflow: hidden;
-  table-layout: fixed;
-  width: 100%;
   margin: 21px 0; }
-  @media (min-width: 992px) {
-    .cross-section {
-      width: 85%; } }
-  .cross-section .cross-section-img,
-  .cross-section .cross-section-text {
+  .cross-section .cross-section-img, .cross-section .cross-section-text {
     position: relative;
     float: left;
     width: 100%;
@@ -564,39 +556,81 @@ License: Free to All NC State University staff, students, and departments.
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 992px) {
-      .cross-section .cross-section-img,
-      .cross-section .cross-section-text {
+    @media (min-width: 768px) {
+      .cross-section .cross-section-img, .cross-section .cross-section-text {
         float: left;
         width: 50%; } }
     @media (min-width: 768px) {
-      .cross-section .cross-section-img,
-      .cross-section .cross-section-text {
+      .cross-section .cross-section-img, .cross-section .cross-section-text {
         display: table-cell;
         vertical-align: middle;
         float: none !important; } }
   .cross-section .cross-section-img {
-    padding: 0;
-    overflow: hidden; }
+    float: left;
+    padding: 0; }
     .cross-section .cross-section-img img {
-      margin: 0;
-      width: 100%;
-      height: 100%; }
-      @media (min-width: 768px) {
-        .cross-section .cross-section-img img {
-          width: initial;
-          max-width: none; } }
-    .cross-section .cross-section-img.img-right img {
-      float: right; }
-  .cross-section .cross-section-container {
-    padding: 1em 2em;
-    max-height: 265px; }
-  .cross-section h1, .cross-section h2, .cross-section h3, .cross-section h4, .cross-section h5, .cross-section h6 {
-    font-family: "Glypha LT W01 55 Roman";
-    margin: 11px 0 22px; }
-  .cross-section:hover .link-text {
-    text-decoration: underline; }
+      margin: 20px 0; }
+  .cross-section .cross-section-text {
+    float: left;
+    padding: 1em 2em; }
 
+/*.cross-section {
+	font-family: "Glypha LT W01 55 Roman" !important;
+	display: table;
+	overflow: hidden;
+	table-layout: fixed;
+	width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		width: 85%;
+	}
+
+	.cross-section-img,
+	.cross-section-text {
+		@include make-xs-column(12);
+		@include make-md-column(6);
+		@media (min-width: $screen-sm-min) {
+			display: table-cell;
+			vertical-align: middle;
+			float: none !important;
+		}
+	}
+
+	.cross-section-img {
+		padding: 0;
+		overflow: hidden;
+
+		img {		
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			@media (min-width: $screen-sm-min) {
+				width: initial;
+				max-width: none;
+			}
+		}
+
+		&.img-right {
+			img {
+				float: right;
+			}
+		}
+	}
+
+	.cross-section-container {
+		padding: 1em 2em;
+		max-height: 265px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Glypha LT W01 55 Roman";
+		margin: 11px 0 22px;
+	}
+
+	&:hover .link-text {
+		text-decoration: underline;
+	}
+}*/
 .body-copy + .container > a > .cross-section {
   margin-top: 0; }
 

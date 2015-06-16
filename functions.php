@@ -72,7 +72,7 @@
     add_image_size('callout-tablet',768,432,true);
     add_image_size('callout-sm-desktop',400,265,true);
     add_image_size('callout-desktop',400,265,true);
-    add_image_size('callout-lg-desktop',625,265,true);
+    add_image_size('callout-lg-desktop',625,490,true);
 	add_image_size('generic-phone',480,270,true);
     add_image_size('generic-tablet',768,432,true);
     add_image_size('generic-sm-desktop',240,135,true);
