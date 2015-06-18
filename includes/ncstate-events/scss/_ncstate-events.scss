@@ -1,0 +1,111 @@
+@import '_mixins';
+@import '_variables';
+
+#event .main-content {
+	
+}
+
+#event aside {
+	
+}
+
+#map-canvas {
+	height: 400px;
+	margin: auto;
+	border: 1px solid #cc0000;
+	margin-bottom: 40px;
+}
+
+#event {	
+	.date {
+		font-weight: bold;
+		font-family: UniversRoman;
+		margin: 0;
+	}
+	
+	.map-title {
+		color: #333;
+		text-transform: uppercase;
+		font-family: UniversRoman;
+		font-size: 0.77em;
+		font-weight: bold;
+		margin-top: 25px;
+	}	
+}
+
+#events-index {
+    margin: 3rem 0;
+
+    .index-main {
+        @media(min-width: $screen-lg-min) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .section-head {
+        padding: 0 15px;
+        color: $brand-red;
+        margin: 0 0 3rem;
+    }
+
+    .events-list {
+        @include make-sm-column(8);
+        @include make-md-column(7);
+    }
+
+    .more-events,
+    .events-back {
+        font-size: 1.125rem;
+        margin: 1rem 0;
+    }
+
+    .events-back {
+        .glyphicon {
+            @include scale(-1);
+        }
+        a:hover .glyphicon {
+            left: -4px;
+        }
+    }
+	
+    .event-block {
+    	margin-bottom: 4em;
+    }
+
+    .event-details {
+        font-size: 1.125rem;
+        p {
+            line-height: 1.4;
+            font-size: 0.9em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+    }
+
+	.event-date {
+		@include make-xs-column(2.5);
+        max-width: 85px;
+	}
+
+    .events-index-sidebar {
+        max-width: none;
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-left: 0;
+        @include make-sm-column(4);
+        @include make-md-column(5);
+        padding: 1.5rem;
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        .spotlight-list {
+            font-size: 1rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
