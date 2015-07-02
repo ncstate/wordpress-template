@@ -451,7 +451,7 @@ if(function_exists("register_field_group"))
 								'name' => '',
 								'type' => 'message',
 								'column_width' => '',
-								'message' => 'Events are auto-populated based upon the <a href="admin.php?page=calendar-app">calendars provided in the left-hand menu</a>.	Individual events can be hidden if desired.',
+								'message' => 'Events are auto-populated based upon the <a href="edit.php?post_type=events">events provided in the left-hand menu</a>.',
 							),
 							array (
 								'key' => 'field_537b53dfa9db9',

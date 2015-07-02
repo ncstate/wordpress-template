@@ -16,7 +16,6 @@
      include "includes/phpFlickr/phpFlickr.php";
 	 include "acf.php";
 	 include "includes/custom_fields.php";
-	 include "includes/ncstate-events/ncstate-events.php";
 	 
 	 // Include OptionTree theme options
 	 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );

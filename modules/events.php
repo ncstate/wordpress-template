@@ -28,27 +28,23 @@ $wp_query = new WP_Query($arqs);
 	<?php while( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 		<?php $event = get_post_meta(get_the_ID()); ?>
 		
-		<?php if($event['url'][0]) : ?>
-			<a href="<?php echo $event['url'][0]; ?>">
-		<?php endif; ?>
-				<div class="event-block">
-					<div class="event-date">
-						<time>
-						<?php 
-							$time = $event['start_time'][0];
-							echo date("M j", $time);
-						?>
-						</time>
-					</div>
-					<div class="event-details">
-						<p><strong><?php echo date("l", $time); ?></strong></p>
-						<h4><?php echo get_the_title(); ?></h4>
-						<p><?php echo (empty($event['location'][0]) ? date("g:i a", $time) : date("g:i a", $time) . " | " . $event['location']); ?></p>
-					</div>
+		<a href="<?php echo get_permalink(get_the_ID()); ?>">
+			<div class="event-block">
+				<div class="event-date">
+					<time>
+					<?php 
+						$time = $event['start_time'][0];
+						echo date("M j", $time);
+					?>
+					</time>
 				</div>
-		<?php if($event['url'][0]) : ?>
-			</a>
-		<?php endif; ?>
+				<div class="event-details">
+					<p><strong><?php echo date("l", $time); ?></strong></p>
+					<h4><?php echo get_the_title(); ?></h4>
+					<p><?php echo (empty($event['location'][0]) ? date("g:i a", $time) : date("g:i a", $time) . " | " . $event['location']); ?></p>
+				</div>
+			</div>
+		</a>
 
 <?php endwhile; ?>
 <?php endif; ?>
