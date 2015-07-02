@@ -1,21 +1,9 @@
 <?php
 		// Get RSS Feed(s)
-		include_once( ABSPATH . WPINC . '/feed.php' );
+		include_once( get_template_directory() . '/includes/rss/rss.php' );
 
-		// Get a SimplePie feed object from the specified feed source.
-		add_filter( 'wp_feed_cache_transient_lifetime' , 'return_2' );
-		$rss = fetch_feed( $rss_app_feed_url );
-		remove_filter( 'wp_feed_cache_transient_lifetime' , 'return_2' );
+		$feed_output = load_rss_feed(array('source' => get_sub_field('feed_url')));
 
-		if ( ! is_wp_error( $rss ) ) : // Checks that the object is created correctly
-			
-		    // Figure out how many total items there are, but limit it to 3.
-		    $maxitems = $rss->get_item_quantity( 3 );
-
-		    // Build an array of all the items, starting with element 0 (first element).
-		    $rss_items = $rss->get_items( 0, $maxitems );
-
-		endif;
 ?>
 
 <div class="mod-rss gray-lighter-bg">
@@ -23,31 +11,24 @@
 		<?php if ( get_sub_field('section_name') ) : ?>
 		<h2><?php echo strtoupper(get_sub_field('section_name')); ?></h2>
 		<?php endif; ?>
-		<?php if ( $maxitems == 0 ) : ?>
-			<p class='no-stories'>No stories in feed.  
-			<?php if (current_user_can('activate_plugins')) : ?>
-				Stories can be <a href="wp-admin/admin.php?page=rss-app">added</a> in admin menu.
-			<?php endif; ?>
+		<?php if (count($feed_output->channel->item)<=0) : ?>
+			<p class='no-stories'>No stories in feed.
 			</p>
 		<?php else : ?>
-			<?php foreach ( $rss_items as $item ) : ?>
+			<?php for( $i=0; $i<3; $i++ ) : ?>
+				<?php $item = $feed_output->channel->item[$i] ?>
 				<div class="rss-story-block">
-					<a href="<?php echo esc_url( $item->get_permalink() ); ?>">
-		<!-- ********** Picture functionality to be added later.
-						If picture is present, add 'has-thumb' class to rss-text div below.
-						<picture>
-							<img src="http://placehold.it/300/c00" class="img-responsive" alt="" />
-			*********** </picture> -->
+					<a href="<?php echo esc_url( $item->link ); ?>">
 						<div class="rss-text">
 						<?php if ( get_sub_field('show_date') ) : ?>
-							<time><?php echo $item->get_date('M j, Y'); ?></time>
+							<time><?php echo date('M j, Y', strtotime($item->pubDate)); ?></time>
 						<?php endif; ?>	
-							<h4><?php echo esc_html( $item->get_title() ); ?></h4>
-							<p><?php echo wp_trim_words( esc_html($item->get_description()), 20, "<span style='color:#c00'> [&hellip;]</span>" ) ;?></p>
+							<h4><?php echo esc_html( $item->title ); ?></h4>
+							<p><?php echo wp_trim_words( esc_html((string)$item->description), 20, "<span style='color:#c00'> [&hellip;]</span>" ) ;?></p>
 						</div>
 					</a>
 				</div>
-			<?php endforeach; ?>
+			<?php endfor; ?>
 		<?php endif; ?>
 				<div class="clearfix"></div>
 		<?php 
