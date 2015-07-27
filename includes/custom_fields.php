@@ -33,6 +33,16 @@ $events = array (
 			'maxlength' => '',
 		),
 		array (
+			'key' => 'field_537b5433a9dcb',
+			'label' => 'Link to Details Page',
+			'name' => 'details_link',
+			'type' => 'true_false',
+			'instructions' => 'Add event listing link to event details page.',
+			'column_width' => '',
+			'message' => 'True',
+			'default_value' => 0,
+		),
+		array (
 			'key' => 'field_537b5433a9dba',
 			'label' => 'Link to Calendar Page',
 			'name' => 'button',

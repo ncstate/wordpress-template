@@ -28,7 +28,9 @@ $wp_query = new WP_Query($arqs);
 	<?php while( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 		<?php $event = get_post_meta(get_the_ID()); ?>
 		
-		<a href="<?php echo get_permalink(get_the_ID()); ?>">
+		<?php if(get_sub_field('details_link')): ?>
+			<a href="<?php echo get_permalink(get_the_ID()); ?>">
+		<?php endif; ?>
 			<div class="event-block">
 				<div class="event-date">
 					<time>
@@ -44,7 +46,9 @@ $wp_query = new WP_Query($arqs);
 					<p><?php echo (empty($event['location'][0]) ? date("g:i a", $time) : date("g:i a", $time) . " | " . $event['location']); ?></p>
 				</div>
 			</div>
-		</a>
+		<?php if(get_sub_field('details_link')): ?>
+			</a>
+		<?php endif; ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
