@@ -38,6 +38,10 @@ function custom_theme_options() {
       array(
         'id'          => 'social',
         'title'       => __( 'Social', 'wordpress-template' )
+      ),
+      array(
+        'id'          => 'social-api',
+        'title'       => __( 'API Keys', 'wordpress-template' )
       )
     ),
     'settings'        => array( 
@@ -146,7 +150,7 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'facebook',
-        'label'       => __( 'Facebook', 'wordpress-template' ),
+        'label'       => __( 'Facebook Username', 'wordpress-template' ),
         'desc'        => '',
         'std'         => '',
         'type'        => 'text',
@@ -161,7 +165,7 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'twitter',
-        'label'       => __( 'Twitter', 'wordpress-template' ),
+        'label'       => __( 'Twitter Username', 'wordpress-template' ),
         'desc'        => '',
         'std'         => '',
         'type'        => 'text',
@@ -176,7 +180,7 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'instagram',
-        'label'       => __( 'Instagram', 'wordpress-template' ),
+        'label'       => __( 'Instagram Username', 'wordpress-template' ),
         'desc'        => '',
         'std'         => '',
         'type'        => 'text',
@@ -191,22 +195,7 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'youtube',
-        'label'       => __( 'YouTube', 'wordpress-template' ),
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'text',
-        'section'     => 'social',
-        'rows'        => '',
-        'post_type'   => '',
-        'taxonomy'    => '',
-        'min_max_step'=> '',
-        'class'       => '',
-        'condition'   => '',
-        'operator'    => 'and'
-      ),
-      array(
-        'id'          => 'instagram',
-        'label'       => __( 'Instagram', 'wordpress-template' ),
+        'label'       => __( 'YouTube Username', 'wordpress-template' ),
         'desc'        => '',
         'std'         => '',
         'type'        => 'text',
@@ -233,7 +222,113 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'FACEBOOK_APP_ID',
+        'label'       => __( 'Facebook App ID', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'FACEBOOK_SECRET',
+        'label'       => __( 'Facebook Secret', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'INSTAGRAM_APP_KEY',
+        'label'       => __( 'Instagram App Key', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'TWITTER_CONSUMER_KEY',
+        'label'       => __( 'Twitter Consumer Key', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'TWITTER_CONSUMER_SECRET',
+        'label'       => __( 'Twitter Consumer Secret', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'OAUTH_TOKEN',
+        'label'       => __( 'Twitter oAuth Token', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
+        'id'          => 'OAUTH_TOKEN_SECRET',
+        'label'       => __( 'Twitter oAuth Token Secret', 'wordpress-template' ),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'text',
+        'section'     => 'social-api',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
       )
+	  
     )
   );
   
