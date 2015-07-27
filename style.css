@@ -1047,6 +1047,25 @@ header {
     width: 100%;
     height: 100%; }
 
+#event {
+  font-size: 1.2em;
+  font-family: 'UniversLight';
+  padding-top: 22px; }
+  #event h1 {
+    color: #cc0000;
+    margin-bottom: 0.5em; }
+  #event h3 {
+    color: #cc0000;
+    font-family: 'UniversLight';
+    font-size: 1.1em; }
+  #event .date {
+    font-size: 1.1em; }
+  #event .location {
+    font-size: 1.1em; }
+  #event .description {
+    font-size: 1.0em;
+    margin: 2.5em 0; }
+
 .archive {
   position: relative;
   min-height: 1px;
