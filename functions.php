@@ -13,7 +13,6 @@
 	
 	date_default_timezone_set('America/New_York');
 
-     include "includes/phpFlickr/phpFlickr.php";
 	 include "acf.php";
 	 include "includes/custom_fields.php";
 	 
@@ -224,24 +223,6 @@
 
      	echo "</ul>";
 
-     }
-     
-     function ncsu_show_flickr_set( $set = "" , $api = "ddd4387ab0f016240787f9b72c9f9df4" ){
-         
-         ## phpFlickr Documentation: http://phpflickr.com/
-         
- 	     $f = new phpFlickr($api);
- 	     
-         $photos = $f->photosets_getPhotos($set);
-         
-         foreach ($photos['photoset']['photo'] as $photo){
-             
-             echo "<li><a rel=\"gallery\" href=\"" . $f->buildPhotoURL($photo, 'large') . "\">";
-             echo "<img src=\"" . $f->buildPhotoURL($photo, 'square') . "\" alt=\"" . $photo['title'] . "\" title=\"" . $photo['title'] . "\" width=\"75\" height=\"75\" />";
-             echo "</a></li>";
-             
-         }
-         
      }
 
      /**
