@@ -199,7 +199,7 @@ get_header();
 								
 					elseif( get_row_layout() == 'social_media' ):
 							
-						include_once 'includes/social_media.php';
+						include_once 'includes/ncstate-social-sdk/ncstate-social-sdk.php';
 						include 'modules/social.php';
 
 					elseif( get_row_layout() == 'events' ):

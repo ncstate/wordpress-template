@@ -562,7 +562,7 @@ if(function_exists("register_field_group"))
 								'name' => '',
 								'type' => 'message',
 								'column_width' => '',
-								'message' => 'This social media module will use the accounts provided in the "NC State Theme Options" at left.	The module is capable of displaying your own Facebook, Twitter, and Instagram content.	Content will only be loaded from the social networks you provide.	It is not necessary to have accounts on all three social networks.',
+								'message' => 'This social media module will use the accounts provided in the "NC State Theme Options" at left.	The module is capable of displaying your own Facebook or Twitter content.	Content will only be loaded from the social network you select.',
 							),
 							array (
 								'key' => 'field_537b6b31dd72b',
@@ -580,15 +580,14 @@ if(function_exists("register_field_group"))
 							),
 							array (
 								'key' => 'field_539b0fe330f56',
-								'label' => 'Social Networks',
-								'name' => 'social_networks',
-								'type' => 'checkbox',
-								'instructions' => 'Choose which networks to display',
+								'label' => 'Social Network',
+								'name' => 'social_network',
+								'type' => 'radio',
+								'instructions' => 'Choose which network to display',
 								'column_width' => '',
 								'choices' => array (
 									'facebook' => 'Facebook',
-									'twitter' => 'Twitter',
-									'instagram' => 'Instagram',
+									'twitter' => 'Twitter'
 								),
 								'default_value' => '',
 								'layout' => 'vertical',

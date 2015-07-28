@@ -1,0 +1,4 @@
+*.lock
+config.php
+vendor/
+bin/

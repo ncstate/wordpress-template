@@ -1,0 +1,31 @@
+{       
+    "name": "ncstate-ucomm/ncstate-social-sdk", 
+    "type": "library",
+    "description": "Combines Facebook, Twitter, and Instagram access into one simplified package.",
+    "keywords": ["twitter", "api", "oauth", "facebook", "sdk", "instagram"],
+    "license": "MIT",
+    "homepage": "https://github.ncsu.edu/ncstate-ucomm/ncstate-social-sdk",
+    "authors": [
+        {
+            "name": "Andrew Matthews",
+            "email": "apmatthe@ncsu.edu",
+            "role": "Developer"
+        },
+        {
+            "name": "Scott Thompson",
+            "email": "scott_thompson@ncsu.edu",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.ncsu.edu/ncstate-ucomm/ncstate-social-sdk",
+        "issues": "https://github.ncsu.edu/ncstate-ucomm/ncstate-social-sdk/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "facebook/php-sdk-v4" : "4.0.*",
+        "cosenary/instagram" : "2.*",
+        "abraham/twitteroauth" : "0.4.*"
+    }
+}
