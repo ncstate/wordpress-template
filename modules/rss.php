@@ -32,7 +32,7 @@
 		<?php endif; ?>
 				<div class="clearfix"></div>
 		<?php 
-			  if ( $maxitems >= 3 && get_sub_field('more_button') ) : 
+			  if ( get_sub_field('more_button') ) : 
 		 		while ( have_rows('button_settings') ) : the_row();
 		?>
 				<a href="<?php echo esc_url( get_sub_field('button_link') ); ?>" class="btn btn-red rss-link"><?php the_sub_field("button_text"); ?><span class="glyphicon glyphicon-right-arrow"></span></a>

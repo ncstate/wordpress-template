@@ -53,7 +53,7 @@ $wp_query = new WP_Query($arqs);
 <?php endwhile; ?>
 <?php endif; ?>
 		<div class="clearfix"></div>
-	<?php if ( get_sub_field('button') && sizeof($events) >= 3 ) : ?>
+	<?php if ( get_sub_field('button') ) : ?>
 		<?php while ( have_rows('button_settings') ) : the_row(); ?>
 			<a href="<?php echo esc_url( get_sub_field('button_link') ); ?>" class="btn btn-red rss-link"><?php the_sub_field("button_text"); ?><span class="glyphicon glyphicon-right-arrow"></span></a>
 		<?php endwhile; ?>
