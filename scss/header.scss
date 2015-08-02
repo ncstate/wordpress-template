@@ -1,5 +1,7 @@
 header {
 	width: 100%;
+	max-width: 1500px;
+	margin: auto;
 	border-bottom: 1px solid #ccc;
 	@media (max-width: $screen-sm-min) {
 		padding: 0;

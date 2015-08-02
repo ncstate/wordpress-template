@@ -13,6 +13,7 @@ body {
 
 #main-content {
 	max-width: 1500px;
+	margin: auto;
 }
 
 .container {
@@ -22,6 +23,8 @@ body {
 .l-header {
 	background-color: #f2f2f2;
 	margin-bottom: 3em;
+	max-width: 1500px;
+	margin: auto;
 
 	h1 {
 		margin: 15px 0px;
@@ -53,6 +56,8 @@ body {
 }
 
 .main {
+	max-width: 1500px;
+	margin: auto;
 	
 	img {
 		max-width: 100%;
