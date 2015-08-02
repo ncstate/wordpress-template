@@ -6,8 +6,8 @@
 
 ?>
 
-<div class="mod-rss gray-lighter-bg">
-	<div class="container<?php echo $fluid; ?>">
+<div class="mod-rss">
+	<div class="container">
 		<?php if ( get_sub_field('section_name') ) : ?>
 		<h2><?php echo strtoupper(get_sub_field('section_name')); ?></h2>
 		<?php endif; ?>

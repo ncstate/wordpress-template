@@ -1,7 +1,7 @@
 <?php date_default_timezone_set("America/New_York"); ?>
 
-<div class="mod-social gray-lighter-bg">
-	<div class="container<?php echo $fluid; ?>">
+<div class="mod-social">
+	<div class="container">
 		<?php if ( get_sub_field('section_name') ) : ?>
 			<h2><?php echo strtoupper(get_sub_field('section_name')); ?></h2>
 		<?php endif; ?>
