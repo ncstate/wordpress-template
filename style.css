@@ -495,7 +495,13 @@ License: Free to All NC State University staff, students, and departments.
         width: 85%; } }
 
 .cross-section {
-  font-family: "Glypha LT W01 55 Roman" !important; }
+  font-family: "Glypha LT W01 55 Roman" !important;
+  margin-bottom: 20px; }
+  .cross-section:before, .cross-section:after {
+    content: " ";
+    display: table; }
+  .cross-section:after {
+    clear: both; }
   .cross-section .cross-section-img, .cross-section .cross-section-text {
     position: relative;
     float: left;
@@ -520,7 +526,10 @@ License: Free to All NC State University staff, students, and departments.
     float: left;
     padding: 0; }
     .cross-section .cross-section-img img {
-      margin: 25px; }
+      margin: 0px; }
+      @media (min-width: 768px) {
+        .cross-section .cross-section-img img {
+          margin: 25px; } }
   .cross-section .cross-section-text {
     float: left;
     padding: 1em 3em; }

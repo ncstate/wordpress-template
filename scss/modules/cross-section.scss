@@ -1,5 +1,7 @@
 .cross-section {
 	font-family: "Glypha LT W01 55 Roman" !important;
+	margin-bottom: 20px;
+	@include clearfix();
 	
 	.cross-section-img, .cross-section-text {
 		@include make-xs-column(12);
@@ -17,7 +19,10 @@
 		padding: 0;
 		
 		img {
-			margin: 25px;
+			@media (min-width: $screen-sm-min) {
+				margin: 25px;
+			}
+			margin: 0px;
 		}
 	}
 	
