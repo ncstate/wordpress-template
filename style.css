@@ -446,7 +446,8 @@ License: Free to All NC State University staff, students, and departments.
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding: 1em; }
+  padding: 1em;
+  color: #333; }
   @media (min-width: 768px) {
     .social-block {
       float: left;
@@ -458,8 +459,6 @@ License: Free to All NC State University staff, students, and departments.
   @media (min-width: 768px) {
     .social-block {
       padding: 1em 2em; } }
-  .social-block a {
-    color: #c00; }
   .social-block h4 {
     color: #c00; }
   .social-block:hover {

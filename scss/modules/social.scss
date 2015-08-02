@@ -50,12 +50,9 @@
 	@include make-sm-column(4);
 	@include make-md-column(4);
 	padding: 1em;
+	color: #333;
 	@media (min-width: $screen-sm-min) {
 		padding: 1em 2em;
-	}
-
-	a {
-		color: #c00;
 	}
 
 	h4 {
