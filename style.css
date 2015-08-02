@@ -131,14 +131,12 @@ License: Free to All NC State University staff, students, and departments.
         .l-header .page-lead p {
           line-height: 1.3em; } }
 
-.l-main {
-  padding-bottom: 50px; }
-  .l-main img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 21px; }
-  .l-main p {
-    margin: 0px 0px 21px; }
+.l-main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 21px; }
+.l-main p {
+  margin: 0px 0px 21px; }
 
 .l-sidebar {
   position: relative;
