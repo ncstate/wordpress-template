@@ -1,6 +1,7 @@
-.side-navigation {
-	@include make-md-column(2);
+.menu {
+	@include make-md-column(12);
 	font-family: UniversCondensed;
+	@include clearfix();
 
 	li {
 		padding: 0.5em 0;
@@ -18,17 +19,19 @@
 	li.current-menu-parent {
 		ul {
 			display: block;
+			margin-left: 2em;
 		}
 	}
 
 	a {
-		color: #aaa;
+		color: #333;
 	}
 
 	a:hover,
 	.current-menu-item > a,
 	.current-menu-parent > a {
 		color: #000;
+		font-weight: bold;
 	}
 }
 
