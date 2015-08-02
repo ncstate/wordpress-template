@@ -773,7 +773,7 @@ header {
         max-width: 375px; } }
     @media (min-width: 1200px) {
       .landing-header .header-content {
-        max-width: 450px;
+        max-width: 400px;
         padding: 0;
         font-size: 1.5rem; } }
     .landing-header .header-content h1 {
@@ -782,6 +782,15 @@ header {
       @media (min-width: 1200px) {
         .landing-header .header-content h1 {
           font-size: 3.75rem; } }
+    .landing-header .header-content a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3em; }
+      .landing-header .header-content a:hover {
+        color: #ccc; }
+    .landing-header .header-content .glyphicon {
+      font-size: 1.5em;
+      top: 8px; }
 
 .page, .page-nav {
   position: relative;

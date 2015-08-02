@@ -6,6 +6,7 @@
 			<div class="header-content">
 				<h1><?php echo get_sub_field('headline'); ?></h1>
 				<p><?php echo get_sub_field('teaser'); ?></p>
+				<p><a href="<?php echo get_sub_field('url'); ?>"><?php echo append_arrow(get_sub_field('url_text'), 'roman-arrow'); ?></a></p>
 			</div>
 		</div>
 	</header>

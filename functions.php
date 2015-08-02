@@ -1,20 +1,10 @@
 <?php
-
-    /** 
-     **  This file is organized in 5 main components:
-     ** 
-     **  i.   Wordpress Resets
-     **  ii.  Custom Post Types
-     **  iii. Custom Taxonomies
-     **  iv.  Theme Functions
-     **  v.   Short Codes
-     ** 
-     **/
 	
 	date_default_timezone_set('America/New_York');
 
 	 include "acf.php";
 	 include "includes/custom_fields.php";
+	 include "includes/shortcodes.php";
 	 
 	 // Include OptionTree theme options
 	 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
@@ -49,27 +39,6 @@
         return 15;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-      
-    /*****************************************************************************
-     ** ii.   Custom Post Types
-     *****************************************************************************/
-     
-     ## Documentation: http://codex.wordpress.org/Post_Types
-      
-      
-    /*****************************************************************************
-     ** iii.  Custom Taxonomies
-     *****************************************************************************/
-     
-     ## Documentation: http://codex.wordpress.org/Taxonomies
-      
-      
-    /*****************************************************************************
-     ** iv.  Theme Functions
-     *****************************************************************************/
-
-     ## FYI: http://codex.wordpress.org/Functions_File_Explained
 
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('banner-phone',480,192,true);
@@ -457,64 +426,43 @@
         return $image;
     }
 
-     // Create Cross Section short code
-    add_shortcode( 'cross_section', 'cross_section_shortcode' );
-    function cross_section_shortcode( $atts, $content = "" ){
-        include "includes/layout.php";
-        
-        extract (shortcode_atts ( array (
-            'img_src' => '',
-            'img_pos' => 'left',
-            'link' => false,
-            'link_txt' => '',
-            'link_url' => '',
-            'color' => 'green'
-        ), $atts ) );
-        
-        $id = "cross_section_" . rand(0,1000000);
 
-        $image = ncsu_get_img_object_from_url( $img_src );
+	if (!function_exists('append_arrow')) {
+	// Append arrow if necessary on Feature Content teaser text
+	function append_arrow( $value, $arrow ) {
+	    if($value) {
 
-        $output = "";
-
-        if ( $link && $link_url ):
-            $output .= "<a href=\"" . $link_url . "\" target=\"_blank\" id=\"" . $id . "\">";
-        endif;
-            $output .= "<div class='cross-section " . $color . "-bg'>";
-                if ( $img_pos == 'left' && $image):
-                $output .= "<picture class='cross-section-img'>";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-lg-desktop'] . "\" media=\"(min-width: " . $lg_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-desktop'] . "\" media=\"(min-width: " . $md_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-sm-desktop'] . "\" media=\"(min-width: " . $sm_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-tablet'] . "\" media=\"(min-width: " . $xs_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-phone'] . "\">";
-                    $output .= "<img src=\"" . $image['sizes']['callout-desktop'] . "\" class=\"img-responsive\" alt=\"" . $image['alt'] . "\" />";
-                $output .= "</picture>";
-                endif;
-                $output .= "<div class='cross-section-text'>";
-                    $output .= "<div class='cross-section-container'>";
-                        $output .= $content;
-                        if ( $link && $link_txt ):
-                            $output .= "<p class=\"link-text\">" . $link_txt . "</p>";
-                        endif;
-                    $output .= "</div>";
-                $output .= "</div>";
-                if ( $img_pos == 'right' && $image):
-                $output .= "<picture class='cross-section-img img-right'>";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-lg-desktop'] . "\" media=\"(min-width: " . $lg_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-desktop'] . "\" media=\"(min-width: " . $md_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-sm-desktop'] . "\" media=\"(min-width: " . $sm_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-tablet'] . "\" media=\"(min-width: " . $xs_breakpoint . ")\">";
-                    $output .= "<source srcset=\"" . $image['sizes']['callout-phone'] . "\">";
-                    $output .= "<img src=\"" . $image['sizes']['callout-desktop'] . "\" class=\"img-responsive\" alt=\"" . $image['alt'] . "\" />";
-                $output .= "</picture>";
-                endif;
-            $output .= "</div>";
-        if ( $link && $link_url ): 
-            $output .= "</a>"; 
-        endif;
+	        $autop = '';
+	        $value = trim($value);
         
-        return $output;
-    }
+	        // Find last word start
+	        $last_word_start = strrpos($value, ' ');
+	        if($last_word_start !== false) {
+	            // Add one to get the first letter of the last word
+	            $last_word_start++;
+	        } else {
+	            // Only one word
+	            $last_word_start = 0;
+	        }
+
+	        // Handle auto p's for last word parsing
+	        if( strrpos($value, '</p>') ) {
+	            $autop = '</p>';
+	            $last_word_end = strrpos($value, '</p>') - $last_word_start;
+	            $last_word = substr( $value, $last_word_start, $last_word_end );
+	        } else {
+	            $last_word = substr( $value, $last_word_start );
+	        }
+
+
+	        // Join beginning of string to last word + arrow unit
+	        $value = substr( $value, 0, $last_word_start ) . 
+	                '<span class=nowrap>' .
+	                    $last_word .
+	                '<span class="glyphicon glyphicon-' . $arrow . '"></span></span>' . $autop;
+	    }
+	    return $value;
+	}
+	}
 
 ?>
