@@ -131,11 +131,11 @@ License: Free to All NC State University staff, students, and departments.
         .l-header .page-lead p {
           line-height: 1.3em; } }
 
-.l-main img {
+.main img {
   max-width: 100%;
   height: auto;
   margin-bottom: 21px; }
-.l-main p {
+.main p {
   margin: 0px 0px 21px; }
 
 .l-sidebar {
@@ -396,52 +396,6 @@ License: Free to All NC State University staff, students, and departments.
     margin: 15px 0;
     font-size: 1.5em; }
 
-.mod-events.is-vertical h2 {
-  padding-left: 0; }
-@media (min-width: 992px) {
-  .mod-events.is-vertical .event-block {
-    padding: 1.5em 1em; }
-  .mod-events.is-vertical .event-date {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0.3em 0.25em; } }
-  @media (min-width: 992px) and (min-width: 768px) {
-    .mod-events.is-vertical .event-date {
-      float: left;
-      width: 29.16667%; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .mod-events.is-vertical .event-date {
-      float: left;
-      width: 25%; } }
-@media (min-width: 992px) {
-    .mod-events.is-vertical .event-date time {
-      font-size: 0.9em;
-      line-height: 1.2; }
-    .mod-events.is-vertical .event-date span {
-      display: block;
-      font-size: 2.2em; }
-  .mod-events.is-vertical .event-details {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 0; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .mod-events.is-vertical .event-details {
-      float: left;
-      width: 66.66667%; } }
-@media (min-width: 992px) {
-    .mod-events.is-vertical .event-details h4 {
-      font-size: 1.5em; } }
-.mod-events.is-vertical .event-date span {
-  margin-left: 5px; }
-
 .mod-social {
   width: 100%;
   padding: 3em 1em; }
@@ -673,8 +627,7 @@ License: Free to All NC State University staff, students, and departments.
 
 header {
   width: 100%;
-  border-bottom: 1px solid #ccc;
-  padding: 0 15px; }
+  border-bottom: 1px solid #ccc; }
   @media (max-width: 768px) {
     header {
       padding: 0; } }
@@ -777,79 +730,58 @@ header {
       border-bottom: none;
       padding-bottom: 5px; } }
 
-.hp-banner {
-  background-color: #c00;
-  color: #fff;
-  margin: inherit; }
-  @media (max-width: 768px) {
-    .hp-banner {
-      margin: 0 -15px; } }
-  .hp-banner a {
-    color: #fff; }
-  .hp-banner p {
-    margin: 0; }
-  .hp-banner img {
-    width: 100%; }
-  .hp-banner h2 {
-    width: 100%;
-    margin: 0;
-    padding: 15px 0;
-    color: #fff;
-    font-family: UniversCondensed;
-    font-size: 1.6em; }
-    @media (min-width: 768px) {
-      .hp-banner h2 {
-        font-size: 2em;
-        padding: 15px 10px; } }
-  .hp-banner a:hover h2 {
-    text-decoration: underline; }
-  .hp-banner .glyphicon {
-    padding: 5px;
-    margin-left: 5px;
-    vertical-align: bottom; }
-  .hp-banner .sub-head {
-    display: none;
-    margin: 15px 10px -10px; }
-    @media (min-width: 768px) {
-      .hp-banner .sub-head {
-        display: block; } }
-  .hp-banner.split {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0; }
-    @media (min-width: 992px) {
-      .hp-banner.split {
-        float: left;
-        width: 62.5%; } }
-    .hp-banner.split img {
-      height: 49.6667%;
-      width: 100%; }
-    .hp-banner.split .banner-action {
-      padding: 0 0 1em 1em; }
-
-.hp-banner-sidebar {
+.landing-header {
   position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .hp-banner-sidebar {
-      float: left;
-      width: 37.5%; } }
-  .hp-banner-sidebar .mod-rss,
-  .hp-banner-sidebar .mod-events {
-    padding: 1.5em 0 0 1em; }
-  .hp-banner-sidebar .rss-story-block,
-  .hp-banner-sidebar .event-block {
+  overflow: hidden;
+  background-color: #333333; }
+  .landing-header:before, .landing-header:after {
+    content: " ";
+    display: table; }
+  .landing-header:after {
+    clear: both; }
+  .landing-header img {
+    float: right;
     width: 100%; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .hp-banner-sidebar .rss-story-block,
-      .hp-banner-sidebar .event-block {
-        width: 50%; } }
-  .hp-banner-sidebar .rss-story-block p {
-    margin-bottom: 0; }
+    @media (min-width: 992px) {
+      .landing-header img {
+        width: 55%; } }
+  @media (max-width: 767px) {
+    .landing-header .container {
+      padding: 0; } }
+  @media (max-width: 991px) {
+    .landing-header .container {
+      width: auto; } }
+  .landing-header .header-content {
+    letter-spacing: 0.05em;
+    line-height: 1.75;
+    float: left;
+    padding: 2.5rem 3rem;
+    width: 100%;
+    color: #fff;
+    background-color: transparent; }
+    @media (min-width: 992px) {
+      .landing-header .header-content {
+        position: absolute;
+        padding: 0 0 0 1rem;
+        max-width: 370px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%); } }
+    @media (min-width: 992px) {
+      .landing-header .header-content {
+        max-width: 375px; } }
+    @media (min-width: 1200px) {
+      .landing-header .header-content {
+        max-width: 450px;
+        padding: 0;
+        font-size: 1.5rem; } }
+    .landing-header .header-content h1 {
+      font-size: 2.75rem;
+      margin-top: 0; }
+      @media (min-width: 1200px) {
+        .landing-header .header-content h1 {
+          font-size: 3.75rem; } }
 
 .page, .page-nav {
   position: relative;
