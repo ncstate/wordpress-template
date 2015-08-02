@@ -69,7 +69,7 @@ The syntax to create a callout shortcode is as follows:
 
 | Attribute | Description | Default Value |
 | --------- | ----------- | ------------- |
-| `img_src`	| Optional. If you would like to use an image, enter the file URL here. Images must be part the Wordpress media library. You can find the file URL to the right of the image in the media library. | `null` |
+| `img_id`	| Optional. If you would like to use an image, enter the image's ID here. Images must be part the Wordpress media library. You can find the ID in the address bar when viewing the image in the media library. | `null` |
 | `img_pos` | Optional. If you do include an image, use this attribute to define the image's position. Options are `left` or `right`. | `left` |
 | `link` | Optional. Should the cross section be a link? Options are `true` or `false`. | `false` |
 | `link_txt` | Optional. Add text to the end of the cross section that underlines on hover. This is where you would add something like "Learn More". Requires `link='true'`. | Empty string|
