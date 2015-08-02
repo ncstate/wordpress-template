@@ -14,7 +14,6 @@
 		<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
 		<!-- Wordpress Theme Style -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
-		<link rel="stylesheet" type="text/css" href="http://cdn.ncsu.edu/brand-assets/wordpress-themes/lite/1.1.0/style.css" />
 		
 		<!-- picture element polyfill -->
 		<script>
@@ -44,7 +43,7 @@
 		
 		<div id="ncstate-utility-bar"></div>
 		<header>
-			<div class='container<?php echo $fluid; ?>'>
+			<div class='container'>
 				<div class='site-title'>
 					<button type="button">
 				       <span class="sr-only">Toggle navigation</span>

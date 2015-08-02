@@ -11,19 +11,12 @@ body {
 	color: inherit;
 }
 
+#main-content {
+	max-width: 1500px;
+}
+
 .container {
-	@media (min-width: $screen-sm-min) {
-    	width: $container-sm;
-	  }
-	 @media (min-width: $screen-md-min) {
-	    width: $container-md;
-	  }
-	 @media (min-width: $screen-lg-min) {
-	    width: $container-lg;
-	  }
-	 @media (min-width: $screen-lg-min + 300) {
-	    width: 1500px;
-	  }
+
 }
 
 .l-header {
@@ -60,6 +53,7 @@ body {
 }
 
 .main {
+	
 	img {
 		max-width: 100%;
 		height: auto;

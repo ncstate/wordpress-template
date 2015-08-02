@@ -85,18 +85,8 @@ License: Free to All NC State University staff, students, and departments.
   font-size: 0.8em;
   color: inherit; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1022px; } }
-@media (min-width: 1500px) {
-  .container {
-    width: 1500px; } }
+#main-content {
+  max-width: 1500px; }
 
 .l-header {
   background-color: #f2f2f2;
@@ -186,11 +176,11 @@ License: Free to All NC State University staff, students, and departments.
   @media (min-width: 768px) {
     .generic-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 992px) {
     .generic-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 768px) {
     .generic-block {
       padding: 1em 2em; } }
@@ -251,11 +241,11 @@ License: Free to All NC State University staff, students, and departments.
   @media (min-width: 768px) {
     .rss-story-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 992px) {
     .rss-story-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 768px) {
     .rss-story-block {
       padding: 1em 2em; } }
@@ -367,11 +357,11 @@ License: Free to All NC State University staff, students, and departments.
   @media (min-width: 768px) {
     .event-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 992px) {
     .event-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 768px) {
     .event-block {
       padding: 1em 2em; } }
@@ -451,11 +441,11 @@ License: Free to All NC State University staff, students, and departments.
   @media (min-width: 768px) {
     .social-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 992px) {
     .social-block {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   @media (min-width: 768px) {
     .social-block {
       padding: 1em 2em; } }
@@ -611,7 +601,7 @@ header {
     padding-right: 1em; }
     @media (max-width: 768px) {
       .site-title img {
-        padding-bottom: 0.35714em; } }
+        padding-bottom: 0.3571428571em; } }
   .site-title h6, .site-title h1 {
     float: left;
     margin: 0;
@@ -825,7 +815,7 @@ header {
   @media (min-width: 992px) {
     .page-nav {
       float: left;
-      width: 83.33333%; } }
+      width: 83.3333333333%; } }
 
 .post {
   position: relative;
@@ -859,7 +849,7 @@ header {
   @media (min-width: 992px) {
     .has-date h2 {
       float: left;
-      width: 91.66667%; } }
+      width: 91.6666666667%; } }
 .has-date time {
   position: relative;
   float: left;
@@ -885,7 +875,7 @@ header {
   @media (min-width: 992px) {
     .has-date time {
       float: left;
-      width: 8.33333%; } }
+      width: 8.3333333333%; } }
 
 .related-stories {
   width: 100%;
@@ -923,7 +913,7 @@ header {
     @media (min-width: 992px) {
       .related-stories .rs-story {
         float: left;
-        width: 33.33333%; } }
+        width: 33.3333333333%; } }
   .related-stories .rs-wrapper {
     padding: 1em 1.3em; }
     @media (max-width: 992px) {
@@ -978,7 +968,7 @@ header {
   @media (min-width: 992px) {
     .archive {
       float: left;
-      width: 66.66667%; } }
+      width: 66.6666666667%; } }
   .archive article {
     clear: both;
     margin: 0.5em 0;
@@ -1003,7 +993,7 @@ header {
       display: block; }
       @media (min-width: 480px) {
         .archive article picture {
-          width: 33.33333%;
+          width: 33.3333333333%;
           max-width: 150px;
           float: left; } }
       .archive article picture img {
@@ -1012,7 +1002,7 @@ header {
       padding: 1em; }
       @media (min-width: 480px) {
         .archive article .article-details.has-thumb {
-          width: 66.66667%;
+          width: 66.6666666667%;
           float: left; } }
     .archive article.featured {
       width: 100%; }
@@ -1043,7 +1033,7 @@ header {
   @media (min-width: 992px) {
     .full-sb {
       float: left;
-      width: 33.33333%; } }
+      width: 33.3333333333%; } }
   .full-sb .sb-category li:nth-of-type(1n+10),
   .full-sb .sb-tags li:nth-of-type(1n+10) {
     display: none; }
@@ -1148,7 +1138,7 @@ footer {
     @media (min-width: 992px) {
       footer .social {
         float: left;
-        width: 33.33333%; } }
+        width: 33.3333333333%; } }
     @media (min-width: 768px) {
       footer .social {
         margin-left: -17px;
@@ -1181,7 +1171,7 @@ footer {
     @media (min-width: 992px) {
       footer .resources {
         float: left;
-        width: 20.83333%; } }
+        width: 20.8333333333%; } }
     @media (min-width: 992px) {
       footer .resources {
         margin-top: 0.75em;

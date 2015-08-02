@@ -17,31 +17,34 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+			
+			<div id="main-content" role="main">
 
-			<div class='container'>
-				<?php get_sidebar('page_left'); ?>
-				<?php
-					if(is_active_sidebar('page_left') && is_active_sidebar('page_right')):
-						$width = 'half-width';
-					elseif(is_active_sidebar('page_left') || is_active_sidebar('page_right')):
-						$width = 'default-width';
-					else:
-						$width = 'full-width';
-					endif;
-				?>
-				<section role="main" class='l-main page<?php echo " " . $width; ?>'>
-					<?php 	
-							if ( have_posts() ):
-							    // get WP content
-							    while ( have_posts() ) : the_post();
-										the_content();
-							    endwhile;
-							else :
-								//No content
-							endif;	 
+				<div class='container'>
+					<?php get_sidebar('page_left'); ?>
+					<?php
+						if(is_active_sidebar('page_left') && is_active_sidebar('page_right')):
+							$width = 'half-width';
+						elseif(is_active_sidebar('page_left') || is_active_sidebar('page_right')):
+							$width = 'default-width';
+						else:
+							$width = 'full-width';
+						endif;
 					?>
-				</section>
-				<?php get_sidebar('page_right'); ?>
+					<section role="main" class='l-main page<?php echo " " . $width; ?>'>
+						<?php 	
+								if ( have_posts() ):
+								    // get WP content
+								    while ( have_posts() ) : the_post();
+											the_content();
+								    endwhile;
+								else :
+									//No content
+								endif;	 
+						?>
+					</section>
+					<?php get_sidebar('page_right'); ?>
+				</div>
 			</div>
 
 <?php get_footer(); ?>
