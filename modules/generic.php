@@ -9,15 +9,8 @@
 	<?php endif; ?>
 			<div class="generic-block">
 			<?php if ( get_sub_field('image') ) : ?>
-					<picture>
-						<?php $image = get_sub_field('image'); ?>
-						<source srcset="<?php echo $image['sizes']['generic-lg-desktop']; ?>" media="(min-width: <?php echo $lg_breakpoint; ?>)">
-						<source srcset="<?php echo $image['sizes']['generic-desktop']; ?>" media="(min-width: <?php echo $md_breakpoint; ?>)">
-						<source srcset="<?php echo $image['sizes']['generic-sm-desktop']; ?>" media="(min-width: <?php echo $sm_breakpoint; ?>)">
-						<source srcset="<?php echo $image['sizes']['generic-tablet']; ?>" media="(min-width: <?php echo $xs_breakpoint; ?>)">
-						<source srcset="<?php echo $image['sizes']['generic-phone']; ?>">
-						<img src="<?php echo $image['sizes']['generic-desktop']; ?>" class="img-responsive" alt="<?php echo $image['alt']; ?>" />
-					</picture>
+					<?php $image = get_sub_field('image'); ?>
+					<?php echo get_retina_images($image['ID'], array(324,258,184,681)); ?>
 			<?php endif; ?>
 			<?php if ( get_sub_field('heading') ) : ?>
 				<h4><?php the_sub_field('heading'); ?></h4>

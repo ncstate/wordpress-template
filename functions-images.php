@@ -23,4 +23,10 @@ if ( function_exists('add_retina_image_size') ) :
   add_retina_image_size('img_825', 825); // small desktop
   add_retina_image_size('img_992', 992); // tablet
   add_retina_image_size('img_768', 768); // phone
+
+  // Generic/Announcements
+  add_retina_image_size('img_324', 324); // desktop
+  add_retina_image_size('img_258', 258); // small desktop
+  add_retina_image_size('img_184', 184); // tablet
+  add_retina_image_size('img_681', 681); // phone
 endif;
