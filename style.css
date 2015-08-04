@@ -1087,6 +1087,7 @@ footer {
   font-size: 0.9em;
   max-width: 1500px;
   margin: auto;
+  margin-top: 2em;
   clear: both;
   /* 
   *  I suspect this z-index was only used in the left-nav version.
