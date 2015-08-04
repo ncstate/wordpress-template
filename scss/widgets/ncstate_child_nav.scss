@@ -1,0 +1,15 @@
+.sb-section.widget_ncstate_child_nav ul.menu {
+	&  > li a {
+		color: $brand-red;
+		font-size: 1.3em;
+	}
+	
+	li {
+		padding: 0.5em 0;
+	}
+	
+	.sub-menu .sub-menu li {
+			margin-left: 1em;
+			padding: 0;
+	}
+}

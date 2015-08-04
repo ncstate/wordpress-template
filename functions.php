@@ -2,6 +2,8 @@
 
 	include "acf.php";
 	include "includes/custom_fields.php";
+	include "includes/Sidebar_Walker_Level_Menu.php";
+	include "widgets/child_nav.php";
 	
 	// Include OptionTree theme options
 	require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
@@ -14,6 +16,12 @@
 	get_template_part('functions','images');
 	get_template_part('functions','social');
 	get_template_part('functions','shortcodes');
+	
+	// register NC State left nav widget
+	function register_ncstate_child_nav_widget() {
+	    register_widget( 'NCState_Child_Nav' );
+	}
+	add_action( 'widgets_init', 'register_ncstate_child_nav_widget' );
 
 	// Changing post excerpt length for index pages
 	function custom_excerpt_length( $length ) {
