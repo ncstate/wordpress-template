@@ -17,31 +17,31 @@ License: Free to All NC State University staff, students, and departments.
 
 .reynolds-red-bg {
   color: #fff;
-  background-color: #a92325; }
+  background-color: #990000; }
   .reynolds-red-bg a {
     color: #fff; }
 
 .orange-bg {
   color: #fff;
-  background-color: #d26c2c; }
+  background-color: #d14905; }
   .orange-bg a {
     color: #fff; }
 
 .yellow-bg {
   color: #000;
-  background-color: #fde148; }
+  background-color: #FDD726; }
   .yellow-bg a {
     color: #000; }
 
 .green-bg {
   color: #fff;
-  background-color: #a4b53a; }
+  background-color: #7D8C1F; }
   .green-bg a {
     color: #fff; }
 
 .blue-bg {
   color: #fff;
-  background-color: #47869c; }
+  background-color: #427E93; }
   .blue-bg a {
     color: #fff; }
 
@@ -196,6 +196,8 @@ License: Free to All NC State University staff, students, and departments.
   .generic-block h4 {
     margin-top: 0px;
     color: #c00; }
+  .generic-block p {
+    color: #333; }
 
 .mod-rss {
   width: 100%;
@@ -570,7 +572,7 @@ License: Free to All NC State University staff, students, and departments.
   border: none;
   margin-left: 2px; }
   .widget_search #searchsubmit:hover {
-    background-color: #a92325; }
+    background-color: #990000; }
 
 header {
   width: 100%;
@@ -1035,8 +1037,7 @@ header {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  float: left; }
+  padding-right: 15px; }
   @media (min-width: 768px) {
     .full-sb {
       float: left;
