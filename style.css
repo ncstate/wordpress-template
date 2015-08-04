@@ -801,12 +801,17 @@ header {
     padding: 0.5em 0; }
   .menu .sub-menu li::before {
     display: none; }
+  .menu .sub-menu li {
+    padding: 0; }
   .menu li ul {
     display: none; }
   .menu li.current-menu-item ul,
   .menu li.current-menu-parent ul {
     display: block;
     margin-left: 2em; }
+    .menu li.current-menu-item ul.sub-menu,
+    .menu li.current-menu-parent ul.sub-menu {
+      margin-left: 1em; }
   .menu a {
     color: #333; }
   .menu a:hover,

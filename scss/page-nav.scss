@@ -10,6 +10,10 @@
 	.sub-menu li::before {
 		display: none;
 	}
+	
+	.sub-menu li {
+		padding: 0;
+	}
 
 	li ul {
 		display: none;
@@ -20,6 +24,10 @@
 		ul {
 			display: block;
 			margin-left: 2em;
+			
+			&.sub-menu {
+				margin-left: 1em;
+			}
 		}
 	}
 
