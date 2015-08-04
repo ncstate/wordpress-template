@@ -3,7 +3,7 @@
 $theme = get_option('ncstate_theme');
 
 // Default Bootstrap Breakpoints
-// Used for <picture> elements
+// Previously used for <picture> elements
 $lg_breakpoint = "1200px";
 $md_breakpoint = "992px";
 $sm_breakpoint = "768px";
