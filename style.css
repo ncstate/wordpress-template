@@ -93,7 +93,8 @@ License: Free to All NC State University staff, students, and departments.
   background-color: #f2f2f2;
   margin-bottom: 3em;
   max-width: 1500px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 3em; }
   .l-header h1 {
     margin: 15px 0px;
     color: #c00;
@@ -965,65 +966,66 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .archive {
-      float: left;
-      width: 100%; } }
+  display: inline-block;
+  margin-bottom: em(30);
+  float: left; }
   @media (min-width: 992px) {
     .archive {
       float: left;
       width: 66.6666666667%; } }
-  .archive article {
-    clear: both;
-    margin: 0.5em 0;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .archive article {
-        width: 75%; } }
-    .archive article a {
-      color: #000;
-      display: block; }
-      .archive article a:hover {
-        background-color: #f2f2f2; }
-      .archive article a h2 {
-        color: #cc0000;
-        font-size: 1.4em; }
-      .archive article a h3 {
-        margin-top: 0; }
-      .archive article a h6 {
-        margin: 0; }
-    .archive article picture {
-      padding: 1em;
-      display: block; }
-      @media (min-width: 480px) {
-        .archive article picture {
-          width: 33.3333333333%;
-          max-width: 150px;
-          float: left; } }
-      .archive article picture img {
-        margin: 0; }
-    .archive article .article-details {
-      padding: 1em; }
-      @media (min-width: 480px) {
-        .archive article .article-details.has-thumb {
-          width: 66.6666666667%;
-          float: left; } }
-    .archive article.featured {
-      width: 100%; }
-      .archive article.featured a {
-        padding: 1em; }
-      .archive article.featured img {
-        width: 100%;
-        float: none; }
-  .archive .pagination {
-    padding-left: 1em; }
-    .archive .pagination .current {
-      background-color: #cc0000;
-      color: #fff; }
+  .archive:before, .archive:after {
+    content: " ";
+    display: table; }
+  .archive:after {
+    clear: both; }
+  .archive:hover .archive-txt {
+    color: #000; }
+  .archive:hover .archive-txt-title {
+    color: #660000; }
+  .archive:hover .archive-img img {
+    opacity: 0.7; }
+
+.archive-posts {
+  margin-bottom: 2rem; }
+
+.archive-img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  background-color: #000;
+  margin-right: 2em;
+  margin-bottom: 3em; }
+  @media (min-width: 992px) {
+    .archive-img {
+      float: left;
+      width: 33.3333333333%; } }
+  @media (max-width: 991px) {
+    .archive-img {
+      display: none; } }
+  .archive-img img {
+    margin-bottom: 0; }
+
+.archive-txt {
+  color: #555; }
+
+.archive-txt-meta {
+  font-size: em(12);
+  font-weight: 100; }
+
+.archive-txt-title {
+  color: #cc0000;
+  margin-top: 0; }
+
+.archive-link-icon {
+  font-size: em(30);
+  display: inline-block;
+  vertical-align: middle; }
+
+@media (min-width: 768px) {
+  #archive-searchform {
+    width: 50%; } }
 
 .full-sb {
   position: relative;
@@ -1033,7 +1035,8 @@ header {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  float: left; }
   @media (min-width: 768px) {
     .full-sb {
       float: left;

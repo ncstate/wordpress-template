@@ -22,7 +22,7 @@ get_header();
 			</div>
 
 			<div class='container<?php echo $fluid; ?>'>
-				<section class='l-main post'>
+				<section class='main post'>
 					<?php if ( $video_id = get_post_meta('video_id', true) ) : ?>
 						<div class="featured-video">
 							<iframe width="960" height="720" src="<?php echo '//www.youtube.com/embed/' . $video_id . ''; ?>" frameborder="0" allowfullscreen></iframe>

@@ -8,100 +8,76 @@ get_header(); ?>
 
 <div id="content" role="main">
 
-		<?php the_post(); ?>
 		<div class='l-header'>
-			<div class='container<?php echo $fluid; ?>'>
+			<div class='container'>
 				<div class='page-lead'>
-					<h1><?php echo get_the_title(); ?></h1>
+		  		  <?php
+		  			if(is_search()) :
+		  				echo "<h1>Search Results</h1>";
+		  			elseif(is_date()):
+		  				if (is_day()):
+		  					echo "<h1 class='primary-title'>Stories From " . get_the_date() . "</h1>";
+		  				elseif (is_month()):
+		  					echo "<h1 class='primary-title'>Stories From " . get_the_date('M Y') . "</h1>";
+		  				elseif (is_year()):
+		  					echo "<h1 class='primary-title'>Stories From " . get_the_date('Y') . "</h1>";
+		  				endif;
+		  			elseif(is_category()):
+		  				echo "<h1>" . single_cat_title('', false) . "</h1>";
+		  			else :
+		  				echo "<h1>Results</h1>";
+		  			endif;
+		  			?>
 				</div>
 			</div>
 		</div>
 
-		<div class='container<?php echo $fluid; ?>'>
-			<section class='l-main archive'>
+		<div class='container'>
+			<section class='main'>
 				<!-- Page Title -->
-	        
-	        <?php
-	            $pageNum = 1;
-				query_posts( 'posts_per_page=7' );
-	        ?>
-	        
-    	    
-	        <!-- Recent Posts -->
-	        <?php if (have_posts()): ?>
-	            
-	            <? $cnt = 0; ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<a href="<?php echo get_permalink(); ?>" class="archive">
+						<?php if(has_post_thumbnail()): ?>
+							<div class="archive-img">
+								<?php $img_id = get_post_thumbnail_id($post->ID); ?>
+								<?php echo get_retina_images($img_id, array(380, 324, 0, 0)); ?>
+							</div>
+						<?php endif; ?>
+						<div class="archive-txt">
+							<h6 class="archive-txt-meta"><?php echo get_the_date('M j, Y'); ?></h6>
+							<h4 class="archive-txt-title"><?php echo get_the_title(); ?></h4>
+							<p><?php echo append_arrow(get_the_excerpt(), 'thin-arrow'); ?></p>
+						</div>
+					</a>
+				<?php endwhile; ?>
 
-    			<?php while (have_posts()) : the_post(); ?>
-    			    
-    			    <?php 
-    			    
-    			        $cnt++;
-        			   // $large = get_field('picHome');
+					<div class="archive-nav">
+					  <?php if(get_previous_posts_link()): ?>
+							<div class="archive-nav-older pull-left">
+								<?php echo get_previous_posts_link('<span class="glyphicon glyphicon-roman-arrow reverse"></span>&nbsp;Newer Posts'); ?>
+							</div>
+						<?php endif; ?>
+						<?php if(get_next_posts_link()): ?>
+							<div class="archive-nav-older pull-right">
+								<?php echo get_next_posts_link('Older Posts&nbsp;<span class="glyphicon glyphicon-roman-arrow"></span>'); ?>
+							</div>
+						<?php endif; ?>
+					</div>
 
-                        if($cnt == 1 && $pageNum == 1){
-
-                            echo '<article class="featured">';
-                            echo '<a href="' . get_permalink() . '">';
-                            echo get_the_post_thumbnail(get_the_ID(), 'large');
-							echo the_date('M j, Y','<h6>','</h6>', FALSE);
-                            echo '<h4>' . get_the_title() .'</h4>';
-                            echo '<p class="teaser">' . get_the_excerpt() . '</p>';
-                            echo '</a>';
-                            echo '</article>';
-                            
-                            $first = false;
-
-                        } else if($cnt < 5){
-
-                            if ( get_post_thumbnail_id($post->ID) ){
-                                $thumb_class = 'has-thumb';
-                                $thumb = get_post_thumbnail_id($post->ID);
-                            }
-                            else {
-                                $thumb_class = '';
-                            }
-
-                            echo '<article>';
-                            echo '<a href=' . get_permalink() . '>';
-
-                            if ($thumb_class === 'has-thumb') {
-                            echo '<picture>';
-                                      $image = wp_get_attachment_image_src($thumb, 'thumbnail');
-                            echo      '<source srcset="' . $image[0] . '" media="(min-width: ' . $xs_breakpoint. ')">';
-                                        
-                                      $image = wp_get_attachment_image_src($thumb, 'featured-phone');
-                            echo      '<source srcset="' . $image[0] . '">';
-                                            
-                                      $image = wp_get_attachment_image_src($thumb, 'thumbnail');
-                            echo      '<img src="' . $image[0] . '" class="img-responsive" />';
-                            echo  '</picture>';
-                            }
-
-                            echo '<div class="article-details ' . $thumb_class . '">';
-                            echo the_date('M j, Y','<h6>','</h6>', FALSE);
-                            echo '<h4>' . get_the_title() .'</h4>';
-                            echo '<p class="teaser">' . get_the_excerpt() . '</p>';
-                            echo '</div>';
-                            echo '<div class="clearfix"></div>';
-                            echo '</a>';
-                            echo '</article>';
-
-                        } else {
-                        	break;
-                        }
-                    ?>
-    			    
-    			<?php endwhile; ?>
-    			
-    		<?php else: ?>
-    			
-    			<p class="no-posts"><strong>No posts were found matching the current request.</strong> Trying using the categories and dates below.</p>
-    			
-    		<?php endif; ?>
+				<?php else : ?>
+					<p>Sorry, no posts matched your criteria.</p>
+					<form role="form" method="get" id="archive-searchform" action="<?php echo get_option('ncstate_news_url'); ?>">
+						<div class="input-group">
+							<label class="sr-only" for="searchInput">Search for:</label>
+		            		<input type="text" id="searchInput" class="form-control" value="" name="s" id="s">
+		                	<span class="input-group-btn">
+		                		<button type="submit" class="btn btn-default" id="searchsubmit"><span class="glyphicon glyphicon-search" data-alt="Submit search"></span></button>
+		                	</span>
+		                </div>
+		             </form>
+				<?php endif; ?>
 			</section>
 			
-			<?php include 'full-sidebar.php'; ?>
 		</div>
 
 </div><!-- #content -->
