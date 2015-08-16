@@ -13,3 +13,11 @@
 			padding: 0;
 	}
 }
+
+// This widget is hidden on small (i.e. phone) screens.
+// The same content is accessible using the mobile menu.
+@media (max-width: $screen-sm-min) {
+	.menu-primary-menu-container {
+		display: none;
+	}
+}

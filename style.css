@@ -139,8 +139,7 @@ License: Free to All NC State University staff, students, and departments.
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 7em; }
+  padding-right: 15px; }
   @media (min-width: 992px) {
     .l-sidebar {
       float: left;
@@ -588,6 +587,9 @@ License: Free to All NC State University staff, students, and departments.
   margin-left: 1em;
   padding: 0; }
 
+@media (max-width: 768px) {
+  .menu-primary-menu-container {
+    display: none; } }
 header {
   width: 100%;
   max-width: 1500px;
