@@ -1,8 +1,8 @@
 <?php 
 
-class acf_settings_export {
+class acf_settings_tools {
 	
-	var $view = 'settings-export',
+	var $view = 'settings-tools',
 		$data = array();
 	
 	
@@ -51,7 +51,7 @@ class acf_settings_export {
 		
 		
 		// add page
-		$page = add_submenu_page('edit.php?post_type=acf-field-group', __('Import / Export','acf'), __('Import / Export','acf'), acf_get_setting('capability'),'acf-settings-export', array($this,'html') );
+		$page = add_submenu_page('edit.php?post_type=acf-field-group', __('Tools','acf'), __('Tools','acf'), acf_get_setting('capability'),'acf-settings-tools', array($this,'html') );
 		
 		
 		// actions
@@ -97,6 +97,10 @@ class acf_settings_export {
 			}
 		
 		}
+		
+		
+		// load acf scripts
+		acf_enqueue_scripts();
 		
 	}
 	
@@ -155,7 +159,7 @@ class acf_settings_export {
 		
 		header( "Content-Description: File Transfer" );
 		header( "Content-Disposition: attachment; filename={$file_name}" );
-		header( "Content-Type: application/json" );
+		header( "Content-Type: application/json; charset=utf-8" );
 		
 		echo acf_json_encode( $json );
 		die;
@@ -365,7 +369,7 @@ class acf_settings_export {
 		
 				
 		// update view
-		$this->view = 'settings-export-generate';
+		$this->view = 'settings-tools-export';
 		$this->data['field_groups'] = $json;
 		
 	}
@@ -440,6 +444,6 @@ class acf_settings_export {
 
 
 // initialize
-new acf_settings_export();
+new acf_settings_tools();
 
 ?>
