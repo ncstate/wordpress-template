@@ -7,7 +7,7 @@
   }
 
   &.full-width {
-    @include make-md-column(12);
+    @include make-md-column(9);
   }
   
   &.half-width {

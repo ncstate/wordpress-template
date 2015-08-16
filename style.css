@@ -783,7 +783,7 @@ header {
     @media (min-width: 992px) {
       .page.full-width, .full-width.page-nav {
         float: left;
-        width: 100%; } }
+        width: 75%; } }
   .page.half-width, .half-width.page-nav {
     position: relative;
     min-height: 1px;
