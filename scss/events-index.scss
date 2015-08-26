@@ -1,0 +1,85 @@
+#events-index .container {
+	
+	.event-block {
+		@include make-md-column(10);
+		clear: both;
+	}
+	
+	.event-date {
+		width: 100%;
+		font-size: 1.9em;
+		margin-right: 0.75em;
+		
+		time span {
+			display: block;
+			clear: both;
+			font-size: 1.5em;
+		}
+	}
+	
+	.event-details {
+		margin-left: 2em;
+		margin-top: 0;
+		font-size: 0.9em;
+		
+		p {
+			color: #333 !important;
+			font-size: 1.1em;
+		}
+		
+		h2 {
+			margin-top: 1em;
+		}
+	}
+	
+	.more-events {
+		clear: both;
+		font-size: 1.25em;
+		
+		.glyphicon {
+			top: 10px;
+			font-size: 1.75em;
+		}
+	}
+	
+	.spotlight-box {
+	    background-color: $gray-lighter;
+		font-size: 1.0em;
+	    padding: 1.5rem;
+	    margin: 1.5rem 0;
+	    max-width: 350px;
+	    @media (min-width: $screen-md-min) {
+	        float: right;
+	        width: (1/3)*100%;
+	        margin-left: 1.5rem;
+	        margin-top: 0;
+	    }
+	    h2.spotlight-group_heading {
+	        font-family: UniversRoman;
+	        text-transform: uppercase;
+	        font-size: 0.9em;
+	        font-weight: bold;
+	        margin-top: 0;
+	        margin-bottom: 2rem;
+	        color: #333;
+	    }
+	    h3.spotlight-main_heading {
+	        font-family: GlyphaLight;
+	        font-size: 1.5em;
+	        color: $brand-red;
+	        margin: 0 0 2rem;
+	        font-weight: bold;
+	    }
+	    .action-link {
+	        display: block;
+	        margin-top: 2rem;
+	        font-family: UniversRoman;
+	        font-weight: bold;
+			
+			.glyphicon {
+				font-size: 1.5em;
+				top: 6px;
+			}
+	    }
+	}
+}

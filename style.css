@@ -996,6 +996,74 @@ header {
     font-size: 1.0em;
     margin: 2.5em 0; }
 
+#events-index .container .event-block {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both; }
+  @media (min-width: 992px) {
+    #events-index .container .event-block {
+      float: left;
+      width: 83.33333%; } }
+#events-index .container .event-date {
+  width: 100%;
+  font-size: 1.9em;
+  margin-right: 0.75em; }
+  #events-index .container .event-date time span {
+    display: block;
+    clear: both;
+    font-size: 1.5em; }
+#events-index .container .event-details {
+  margin-left: 2em;
+  margin-top: 0;
+  font-size: 0.9em; }
+  #events-index .container .event-details p {
+    color: #333 !important;
+    font-size: 1.1em; }
+  #events-index .container .event-details h2 {
+    margin-top: 1em; }
+#events-index .container .more-events {
+  clear: both;
+  font-size: 1.25em; }
+  #events-index .container .more-events .glyphicon {
+    top: 10px;
+    font-size: 1.75em; }
+#events-index .container .spotlight-box {
+  background-color: #eeeeee;
+  font-size: 1.0em;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  max-width: 350px; }
+  @media (min-width: 992px) {
+    #events-index .container .spotlight-box {
+      float: right;
+      width: 33.33333%;
+      margin-left: 1.5rem;
+      margin-top: 0; } }
+  #events-index .container .spotlight-box h2.spotlight-group_heading {
+    font-family: UniversRoman;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #333; }
+  #events-index .container .spotlight-box h3.spotlight-main_heading {
+    font-family: GlyphaLight;
+    font-size: 1.5em;
+    color: #cc0000;
+    margin: 0 0 2rem;
+    font-weight: bold; }
+  #events-index .container .spotlight-box .action-link {
+    display: block;
+    margin-top: 2rem;
+    font-family: UniversRoman;
+    font-weight: bold; }
+    #events-index .container .spotlight-box .action-link .glyphicon {
+      font-size: 1.5em;
+      top: 6px; }
+
 .archive {
   position: relative;
   min-height: 1px;
