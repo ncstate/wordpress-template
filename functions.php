@@ -4,6 +4,7 @@
 	include "includes/custom_fields.php";
 	include "includes/Sidebar_Walker_Level_Menu.php";
 	include "widgets/child_nav.php";
+	include "includes/ncstate-responsive-images/ncstate-responsive-images.php";
 	
 	// Include OptionTree theme options
 	require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
