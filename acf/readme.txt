@@ -106,6 +106,10 @@ http://support.advancedcustomfields.com/
 
 == Changelog ==
 
+= 5.3.0 =
+* WYSIWYG field: Fixed 'Visual/Text' toggle bug with WP 4.3
+* Select field: Fixed Select2 bug hiding selected choices
+
 = 5.2.9 =
 * Field group: Added new 'status' setting to enable/disable
 * Field group: Added new 'description' setting shown to developers when viewing the field group list

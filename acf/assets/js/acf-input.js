@@ -6436,41 +6436,42 @@ console.time("acf_test_ready");
 		
 		
 		// populate select2_args.data
-		var optgroups = {};
+		var options = {},
+			optgroups = {};
 		
 		$select.find('option').each(function( i ){
 			
-			// var
-			var parent = '_root';
+			// create option
+			var option = {
+				'id':	$(this).attr('value'),
+				'text':	$(this).text()
+			};
 			
 			
-			// optgroup?
-			if( $(this).parent().is('optgroup') ) {
+			// append
+			options[ option.id ] = option;
 			
-				parent = $(this).parent().attr('label');
+			
+			// find parent
+			var $parent = $(this).parent(),
+				label = $parent.is('optgroup') ? $parent.attr('label') : '_root';
+						
+			
+			// append to optgroups
+			if( !optgroups[ label ] ) {
+			
+				optgroups[ label ] = [];
 				
 			}
 			
-			
-			// append to choices
-			if( ! optgroups[ parent ] ) {
-			
-				optgroups[ parent ] = [];
-				
-			}
-			
-			optgroups[ parent ].push({
-				id: $(this).attr('value'),
-				text: $(this).text()
-			});
+			optgroups[ label ].push( option );
 			
 		});
 		
-
 		$.each( optgroups, function( label, children ){
 			
 			if( label == '_root' ) {
-			
+				
 				$.each( children, function( i, child ){
 					
 					select2_args.data.push( child );
@@ -6480,8 +6481,8 @@ console.time("acf_test_ready");
 			} else {
 			
 				select2_args.data.push({
-					text: label,
-					children: children
+					'text':		label,
+					'children':	children
 				});
 				
 			}
@@ -6504,11 +6505,11 @@ console.time("acf_test_ready");
 			// re-order options
 			$.each( selection, function( k, value ){
 				
-				$.each( select2_args.data, function( i, choice ){
+				$.each( options, function( i, option ){
 					
-					if( value == choice.id ) {
+					if( value === option.id ) {
 					
-						initial_selection.push( choice );
+						initial_selection.push( option );
 						
 					}
 					
