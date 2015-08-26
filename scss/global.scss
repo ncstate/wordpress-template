@@ -74,3 +74,19 @@ body {
 .l-sidebar {
 	@include make-md-column(3);
 }
+
+// Default WP alignment classes
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
