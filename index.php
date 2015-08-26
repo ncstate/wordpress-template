@@ -25,7 +25,7 @@ get_header(); ?>
 		  			elseif(is_category()):
 		  				echo "<h1>" . single_cat_title('', false) . "</h1>";
 		  			else :
-		  				echo "<h1>Results</h1>";
+		  				echo "<h1>" . get_the_title(get_option('page_for_posts')) . "</h1>";
 		  			endif;
 		  			?>
 				</div>
