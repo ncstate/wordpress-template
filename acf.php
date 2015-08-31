@@ -8,7 +8,7 @@ if ( ! class_exists('acf')) :
     function campus_template_acf_settings_path( $path ) {
      
         // update path
-        $path = get_stylesheet_directory() . '/acf/';
+        $path = get_template_directory() . '/acf/';
         
         // return
         return $path;
@@ -22,7 +22,7 @@ if ( ! class_exists('acf')) :
     function campus_template_acf_settings_dir( $dir ) {
      
         // update path
-        $dir = get_stylesheet_directory_uri() . '/acf/';
+        $dir = get_template_directory_uri() . '/acf/';
         
         // return
         return $dir;
@@ -33,6 +33,6 @@ if ( ! class_exists('acf')) :
     add_filter('acf/settings/show_admin', '__return_false');
 
     // 4. Include ACF
-    include_once( get_stylesheet_directory() . '/acf/acf.php' );
+    include_once( get_template_directory() . '/acf/acf.php' );
 
 endif;
