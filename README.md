@@ -1,26 +1,18 @@
-# Template Version 1.2 (Beta) Updates
-* ACF PRO (Version 5.2.6)
-Version 1.1 Updates:
-* Widgets are now supported
-* ACF functionality on subpages is now available in shortcode form
-* New events/calendaring system
-* Fixed drop-down menu width bug
-* Fixed other minor CSS bugs
-* Removed TGM plugin requirement/recommendation service
+# NC State Campus Theme -- Version 2.0 Beta
 
 ## Theme Update Info
-The latest version of the template supports several oft requested features, namely widgets and shortcode support. Shortcodes are supported throughout all templates, and widgets are supported on the default page template.
+If updating from a 1.x version of the theme, it is **strongly** recommended that you make a backup of your DB before installing this update.  Some settings are not yet migratable.
 
-The **Calendar App** has now been replaced with a more robust and much more featureful system. It is no longer a plugin, and it is availble in the **Events** section within the Dashboard. The events system has been completely re-engineered, but it outputs the same content to your front-end code. You will need to re-enter your calendar feeds. You can now edit imported event data from a feed, and you can also manually add an event.
-
-The **RSS App** is no longer provided by default.
+This version of the theme was previously being developed under version number 1.2.  It has since been bumped to version 2.0 to denote the major changes from version 1.x of the theme.
 
 ## Getting Started
-General site-wide settings can be found in `Appearance -> Theme Options`. There you can choose the type of NC State "Brick" to use and also provide your Google Analytics ID and Google Custom Search Engine ID.
+General site-wide settings can be found in `Appearance -> Theme Options`. There you can choose the type of NC State "Brick" to use and also provide your Google Analytics ID, Google Custom Search Engine ID.
 
-You also have the option to provide the username of your social media accounts. The theme supports Facebook, Twitter, Instagram, and YouTube; however, not all accounts are required. The social networks to which you provide a username will automatically populate in your site’s footer. The social content will also be available in the social media module on the homepage if you choose to include it on that page.
+You also have the option to provide the username of your social media accounts. The theme supports Facebook, Twitter, Instagram, and YouTube; however, not all accounts are required.  The social networks to which you provide a username will automatically populate in your site’s footer. The social content will also be available in the social media module on the homepage if you choose to include it on that page.
 
-The NC State Theme Options menu also lets you set other footer content such as resource links and your unit’s contact information.
+API keys for social networks can also be set in Theme Options.  Key information for each network that will be used on the homepage must be provided.  Documentation for finding the API keys will be provided later.
+
+The Theme Options menu also lets you set other footer content such as resource links and your unit’s contact information.
 
 The WP SEO plugin by Yoast is recommended to set metadata. Metadata is additional data that search engines and social networks can use to better describe your site’s content. The search engine description is usually the snippet of text displayed beneath your site’s URL in search engine results. The social media title, teaser text, and image are used for social networks such as Facebook when a URL from your website is shared on social media.
 
@@ -33,7 +25,7 @@ To assign that page as your homepage, visit `Appearance->Customize`. In the `Sta
 Next you can **configure your site’s menus** in `Appearance->Menus`. First a menu must be created, and then it must be assigned to a theme location. Theme locations correlate the main menu (i.e. ‘Header’) and each top-level page. The Header location will display horizontally at the top of every page.
 
 ## Calendar
-The NC State theme is capable of pulling data from outside calendars and displaying it on your website. Public Google calendars and the University's ActiveData calendar are currently supported.
+The NC State theme interfaces with the (NC State Events plugin)[https://github.ncsu.edu/ncstate-ucomm/ncstate-events] to pull in data from outside calendars and display it on your website. Public Google calendars and the University's ActiveData calendar are currently supported.
 
 Within `Events -> Settings` you can specify external calendars.
 
@@ -44,7 +36,7 @@ If using an ActiveData feed, it can be hard to find the XML feed URL. Instead yo
 More than one source calendar feed can be provided; enter each URL/calendar ID on a newline. Your website will refresh the calendar feed every hour. By default new events are added as a draft and require human intervention to be published. The checkbox on the `Settings` page allows you to auto-publish new events from your calendar feeds. Visiting the `Events->Settings` page will manually refresh your feeds.
 
 ## Homepage Modules
-You can create your homepage from six different potential modules. These include:
+You can create your homepage from six different potential modules:
 
 * Body Copy
 * Callout
