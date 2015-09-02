@@ -60,7 +60,7 @@ get_header();
 			<?php if (( ! $my_query==NULL) && ($my_query->have_posts())) : ?>
 			<section class='related-stories blue-bg'>
 				<div class='container<?php echo $fluid; ?>'>
-					<h3>RELATED STORIES</h3>  
+					<h3>ADDITIONAL STORIES</h3>  
 					<?php	  
 						    while( $my_query->have_posts() ) {  
 							    $my_query->the_post();  
