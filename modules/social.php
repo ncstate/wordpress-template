@@ -12,9 +12,6 @@
 				if($network=='facebook'):
 					$social_post = getFacebook(ot_get_option('facebook'));
 					$suffix = "fb";
-					echo '<pre>';
-					var_dump($social_post);
-					echo '</pre>';
 				elseif($network=='twitter'):
 					$social_post = getTwitter(ot_get_option('twitter'));
 					$suffix = "twitter";
