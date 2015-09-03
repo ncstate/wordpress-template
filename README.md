@@ -25,7 +25,7 @@ To assign that page as your homepage, visit `Appearance->Customize`. In the `Sta
 Next you can **configure your site’s menus** in `Appearance->Menus`. First a menu must be created, and then it must be assigned to a theme location. Theme locations correlate the main menu (i.e. ‘Header’) and each top-level page. The Header location will display horizontally at the top of every page.
 
 ## Calendar
-The NC State theme interfaces with the (NC State Events plugin)[https://github.ncsu.edu/ncstate-ucomm/ncstate-events] to pull in data from outside calendars and display it on your website. Public Google calendars and the University's ActiveData calendar are currently supported.
+The NC State theme interfaces with the [NC State Events plugin](https://github.ncsu.edu/ncstate-ucomm/ncstate-events) to pull in data from outside calendars and display it on your website. Public Google calendars and the University's ActiveData calendar are currently supported.
 
 Within `Events -> Settings` you can specify external calendars.
 
