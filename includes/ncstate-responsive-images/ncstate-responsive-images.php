@@ -11,8 +11,8 @@
 
 if(!function_exists('responsive_images_scripts')):
 function responsive_images_scripts() {
-	wp_enqueue_script('create_picture', plugin_dir_url(__FILE__) . 'js/createPicture.js');
-	wp_enqueue_script('picture_polyfill', plugin_dir_url(__FILE__) . 'js/picturefill.js', array('create_picture'));
+	wp_enqueue_script('create_picture', get_template_directory_uri() . '/includes/ncstate-responsive-images/js/createPicture.js');
+	wp_enqueue_script('picture_polyfill', get_template_directory_uri() . '/includes/ncstate-responsive-images/js/picturefill.js', array('create_picture'));
 }
 add_action('wp_enqueue_scripts', 'responsive_images_scripts');
 endif;
