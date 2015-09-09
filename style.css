@@ -653,22 +653,30 @@ header {
     font-size: 2.3em; }
 
 #global-nav {
-  font-family: UniversCondensed;
-  padding: 1.7em 0;
-  display: block;
-  margin-left: -7px; }
-  @media (max-width: 768px) {
+    font-family: UniversCondensed;
+    padding: 1.7em 0;
+    display: block;
+    margin-left: -7px;
+}
+@media (max-width: 768px) {
     #global-nav {
-      display: none;
-      padding-top: 0; } }
-  #global-nav > ul > li {
+        display: none;
+        padding-top: 0;
+    }
+}
+#global-nav ul > li {
     float: left;
-    padding: 0 7px; }
-    #global-nav > ul > li a:hover, #global-nav > ul > li.current-menu-item > a, #global-nav > ul > li.current-page-parent > a {
-      background: none;
-      border-bottom: 2px solid #cc0000;
-      padding-bottom: 3px; }
-  #global-nav li > ul {
+    padding: 0 7px;
+}
+#global-nav ul > li a:hover,
+#global-nav ul > li.current-menu-item > a,
+#global-nav ul > li.current_page_item > a,
+#global-nav ul > li.current-page-parent > a {
+    background: none;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 3px;
+}
+#global-nav li > ul {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -676,38 +684,49 @@ header {
     width: 100%;
     padding: 10px 0;
     margin-left: -10px;
-    min-width: 170px; }
-    #global-nav li > ul li {
-      padding: 5px 10px; }
-    #global-nav li > ul a {
-      color: #aaa;
-      padding: 3px 2px;
-      display: block; }
-      #global-nav li > ul a:hover {
-        color: #000;
-        border-bottom: none;
-        padding-bottom: 3px; }
-  #global-nav li:hover > ul {
-    display: block; }
-  #global-nav a {
+    min-width: 170px;
+}
+#global-nav li > ul li {
+    padding: 5px 10px;
+}
+#global-nav li > ul a {
+    color: #aaa;
+    padding: 3px 2px;
+    display: block;
+}
+#global-nav li > ul a:hover {
+    color: #000;
+    border-bottom: none;
+    padding-bottom: 3px;
+}
+#global-nav li:hover > ul {
+    display: block;
+}
+#global-nav a {
     padding: 5px 2px;
-    color: #000; }
-  @media (max-width: 768px) {
-    #global-nav > ul > li {
-      font-size: 1.3em;
-      float: none;
-      padding: 0.5em; }
-      #global-nav > ul > li ul {
+    color: #000;
+}
+@media (max-width: 768px) {
+    #global-nav ul > li {
+        font-size: 1.3em;
+        float: none;
+        padding: 0.5em;
+    }
+    #global-nav ul > li ul {
         display: block;
         position: static;
         padding-left: 1.3em;
         padding-top: 0;
-        padding-bottom: 0; }
-      #global-nav > ul > li:nth-child(n+2) {
-        margin: 10px 0; }
+        padding-bottom: 0;
+    }
+    #global-nav ul > li:nth-child(n+2) {
+        margin: 10px 0;
+    }
     #global-nav a:hover {
-      border-bottom: none;
-      padding-bottom: 5px; } }
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+}
 
 .landing-header {
   position: relative;
