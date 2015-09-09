@@ -661,6 +661,12 @@ header {
     #global-nav {
       display: none;
       padding-top: 0; } }
+#global-nav li > a:after {
+  content: ' ▾';
+}
+#global-nav li > a:only-child:after {
+  content: '';
+}
   #global-nav > ul > li {
     float: left;
     padding: 0 7px; }
