@@ -67,6 +67,14 @@ header {
 		padding-top: 0;
 	}
 
+	li > a:after {
+		content: ' ▾';
+	}
+
+	li > a:only-child:after {
+		content: '';
+	}
+
 	> ul > li {
 		float: left;
 		padding: 0 7px;
