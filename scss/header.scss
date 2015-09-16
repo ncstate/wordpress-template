@@ -67,12 +67,13 @@ header {
 		padding-top: 0;
 	}
 
-	> ul > li {
+	ul > li {
 		float: left;
 		padding: 0 7px;
 
 		a:hover,
 		&.current-menu-item > a,
+		&.current_page_item > a,
 		&.current-page-parent > a {
 			background: none;
 			border-bottom: 2px solid $brand-red;
@@ -117,7 +118,7 @@ header {
 	}
 
 	@media (max-width: $screen-sm-min) {
-		> ul > li {
+		ul > li {
 			font-size: 1.3em;
 			float: none;
 			padding: 0.5em;
