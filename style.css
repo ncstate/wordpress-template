@@ -692,22 +692,6 @@ header {
   #global-nav a {
     padding: 5px 2px;
     color: #000; }
-  @media (max-width: 768px) {
-    #global-nav > ul > li {
-      font-size: 1.3em;
-      float: none;
-      padding: 0.5em; }
-      #global-nav > ul > li ul {
-        display: block;
-        position: static;
-        padding-left: 1.3em;
-        padding-top: 0;
-        padding-bottom: 0; }
-      #global-nav > ul > li:nth-child(n+2) {
-        margin: 10px 0; }
-    #global-nav a:hover {
-      border-bottom: none;
-      padding-bottom: 5px; } }
 
 .landing-header {
   position: relative;
@@ -1331,13 +1315,6 @@ footer {
         footer .sub-footer address span {
           line-height: 3.3; } }
 
-/*!
-Theme Name: NC State Mobile Nav Test
-Author: Andrew Matthews, University Communications
-Author URI: http://github.ncsu.edu/ncstate-ucomm
-Description: Not a full theme. Just enables testing of code inside of Wordpress
-Version: 1.0
-*/
 #menu-toggle {
   float: right;
   border: none;

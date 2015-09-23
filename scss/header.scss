@@ -116,28 +116,4 @@ header {
 		color: #000;
 	}
 
-	@media (max-width: $screen-sm-min) {
-		> ul > li {
-			font-size: 1.3em;
-			float: none;
-			padding: 0.5em;
-
-			ul {
-				display: block;
-				position: static;
-				padding-left: 1.3em;
-				padding-top: 0;
-				padding-bottom: 0;
-			}
-
-			&:nth-child(n+2) {
-				margin: 10px 0;
-			}
-		}
-
-		a:hover {
-			border-bottom: none;
-			padding-bottom: 5px;
-		}
-	}
 }
