@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head>		
+	<head>	
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
@@ -42,13 +42,15 @@
 	<body>
 		
 		<div id="ncstate-utility-bar"></div>
+		
 		<header>
 			<div class='container'>
 				<div class='site-title'>
-					<button type="button">
-				       <span class="sr-only">Toggle navigation</span>
-				       <span class="glyphicon glyphicon-menu" id="menu-toggle"></span>
-				    </button>
+					<button type="button" id="menu-toggle">
+					    <span class="sr-only">Toggle Navigation</span>
+					    Menu
+					    <span class="glyphicon glyphicon-thin-menu" aria-hidden="true"></span>
+					</button>
 					<?php $brick = (ot_get_option('brick') ? ot_get_option('brick') : '2x1'); ?>
 				    <a href="<?php echo home_url(); ?>">
 						<img src='<?php bloginfo('template_directory'); ?>/img/ncstate-brick-<?php echo $brick; ?>-red.png' alt="NC State"/>
@@ -62,8 +64,8 @@
 					</a>
 				</div>
 				
-				<nav id="global-nav">
-					
+				<nav role="navigation" aria-label="Primary navigation menus" class="primary-nav" id="global-nav" >
+
 					<?php 
 						$args = array(
 							'container' => false,
@@ -76,7 +78,11 @@
 						wp_nav_menu($args);
 					?>
 				</nav> <!--#global-nav-->
-
 			</div>
 		</header>
+
+		<?php ncstate_mobile_nav(); ?>
+
+		<div id="mobile-nav-slide-out">
+		
 		

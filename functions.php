@@ -17,7 +17,12 @@
 	get_template_part('functions','images');
 	get_template_part('functions','social');
 	get_template_part('functions','shortcodes');
-	
+	get_template_part('functions','mobile-nav');
+
+	// register mobile nav js
+	wp_register_script('wp-mobile-nav', get_template_directory_uri().'/js/ncstate-mobile-nav.js','','',true);
+	wp_enqueue_script('wp-mobile-nav');
+
 	// register NC State left nav widget
 	function register_ncstate_child_nav_widget() {
 	    register_widget( 'NCState_Child_Nav' );

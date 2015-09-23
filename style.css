@@ -1330,3 +1330,159 @@ footer {
         max-height: 40px; }
         footer .sub-footer address span {
           line-height: 3.3; } }
+
+/*!
+Theme Name: NC State Mobile Nav Test
+Author: Andrew Matthews, University Communications
+Author URI: http://github.ncsu.edu/ncstate-ucomm
+Description: Not a full theme. Just enables testing of code inside of Wordpress
+Version: 1.0
+*/
+#menu-toggle {
+  float: right;
+  border: none;
+  background-color: transparent;
+  margin: 0 -5px;
+  font-size: 0.9em;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none; } }
+#menu-toggle .glyphicon {
+  font-size: 3.2em;
+  vertical-align: -33%;
+  padding-left: 5px; }
+
+#mobile-nav-slide-out {
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  transition: transform 0.3s ease; }
+
+@media (max-width: 768px) {
+  .mobile-nav-shown #mobile-nav-slide-out {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  .mobile-nav-shown #mobile-nav {
+    opacity: 1; } }
+@media (min-width: 768px) {
+  .mobile-nav-shown #mobile-nav-slide-out {
+    display: block !important; } }
+
+#mobile-nav {
+  font-family: UniversLight;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #fff;
+  border-top: 1px solid #aaa; }
+  @media (min-width: 768px) {
+    #mobile-nav {
+      display: none; } }
+  #mobile-nav.level-2-shown #level-1 {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  #mobile-nav .is-active,
+  #mobile-nav .current-menu-item > a,
+  #mobile-nav .current-menu-ancestor > a {
+    font-weight: bold; }
+  #mobile-nav .has-more:before, #mobile-nav .has-more:after,
+  #mobile-nav .has-dropdown:before,
+  #mobile-nav .has-dropdown:after,
+  #mobile-nav #full-nav:before,
+  #mobile-nav #full-nav:after {
+    content: " ";
+    display: table; }
+  #mobile-nav .has-more:after,
+  #mobile-nav .has-dropdown:after,
+  #mobile-nav #full-nav:after {
+    clear: both; }
+  #mobile-nav .has-more button,
+  #mobile-nav .has-dropdown button,
+  #mobile-nav #full-nav button {
+    color: #aaa;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 50px;
+    padding: 3px; }
+  #mobile-nav .has-more button,
+  #mobile-nav .has-dropdown button {
+    float: right; }
+  #mobile-nav .has-dropdown > .is-active + ul {
+    display: block; }
+  #mobile-nav .has-dropdown button {
+    background: transparent;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  #mobile-nav .has-dropdown.is-open button {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  #mobile-nav #full-nav button {
+    float: left;
+    margin-right: 10px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  #mobile-nav #full-nav a {
+    line-height: 2.17; }
+  #mobile-nav ul {
+    margin: 0; }
+    #mobile-nav ul + ul {
+      border-top: 5px solid #ccc; }
+  #mobile-nav ul ul a {
+    padding-left: 2.5em; }
+  #mobile-nav ul ul ul {
+    display: none;
+    width: 100%;
+    background-color: #e6e6e6;
+    overflow: hidden; }
+    #mobile-nav ul ul ul a {
+      padding-left: 4em; }
+  #mobile-nav ul ul ul ul {
+    display: block;
+    background-color: #f2f2f2; }
+    #mobile-nav ul ul ul ul li {
+      border-color: #ccc; }
+    #mobile-nav ul ul ul ul a {
+      padding-left: 4.8em; }
+  #mobile-nav li {
+    background: none; }
+    #mobile-nav li + li,
+    #mobile-nav li a + ul {
+      border-top: 1px solid #aaa; }
+  #mobile-nav a {
+    color: #000;
+    display: block;
+    padding: 15px;
+    height: 55px;
+    line-height: 1.9; }
+
+#level-1,
+#level-2 {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  background-color: #fff; }
+
+#level-1 {
+  z-index: 102;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  transition: transform 0.3s ease; }
+
+#level-2 {
+  display: none;
+  z-index: 101; }
+  #level-2 #full-nav {
+    text-transform: uppercase;
+    font-size: 0.85em; }
+
+/*# sourceMappingURL=style.css.map */

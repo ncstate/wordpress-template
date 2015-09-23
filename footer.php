@@ -62,11 +62,14 @@
 	<script src='<?php bloginfo('template_directory'); ?>/js/main.js'></script>
 
 
+
 	<?php 
 			if ($theme['opt-tracking-code']!=NULL) :
 				echo $theme['opt-tracking-code'];
 		  	endif; 
 	?>
 	<?php wp_footer(); ?> 
+	
+	</div> <!--mobile-nav-slide-out -->
 </body>
 </html>
