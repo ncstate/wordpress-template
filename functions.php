@@ -116,3 +116,17 @@
 	    }
 	    return $value;
 	}
+	
+	// add a documentation link to admin bar
+	function ncstate_theme_documentation($wp_admin_bar) {
+		$args = array(
+			'id' => 'ncstate_theme_docs',
+			'title' => 'NC State Theme Documentation', 
+			'href' => 'https://github.com/ncstate/wordpress-template/blob/master/README.md',
+			'meta' => array(
+				'target' => '_blank',
+			),
+		);
+		$wp_admin_bar->add_node($args);
+	}
+	add_action('admin_bar_menu', 'ncstate_theme_documentation', 999);
