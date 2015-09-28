@@ -10,17 +10,19 @@
 		<title><?php wp_title(' :: ', true, 'right'); bloginfo('name'); ?></title>
 		<link rel="shortcut icon" href="http://www.ncsu.edu/favicon.ico" />
 
-		<!-- NC State Bootstrap CSS -->
-		<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
-		<!-- Wordpress Theme Style -->
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
 		
 		<!-- picture element polyfill -->
 		<script>
 			// Picture element HTML5 shiv
 			document.createElement( "picture" );
 		</script>
-		<script src="<?php bloginfo('template_url'); ?>/js/picturefill.min.js" async></script>
+		
+
+		<!-- Prefetch DNS for external assets -->
+		<link rel="dns-prefetch" href="//cdn.ncsu.edu">
+		<link rel="dns-prefetch" href="//www.google-analytics.com">
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,11 +32,8 @@
 	    <![endif]-->
 
 	    <!-- NC State Utility Bar -->
-		<?php if(ot_get_option('cse_id')): ?>
-	    	<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=<?php echo ot_get_option('cse_id'); ?>&placeholder=Search"></script>
-		<?php else: ?>
-			<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php"></script>
-		<?php endif; ?>
+
+	    <script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=<?php echo ot_get_option('cse_id'); ?>&placeholder=<?php echo ot_get_option('search_placeholder'); ?>"></script>
 		
 		<?php wp_head(); ?> 
 	</head>

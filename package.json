@@ -1,0 +1,32 @@
+{
+  "name": "mobile-menu",
+  "description": "NC State mobile navigation menu",
+  "version": "1.0.0",
+  "private": true,
+  "contributors": [
+    "Andrew Matthews"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^1.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-ruby-sass": "^1.4.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ncsu.edu/ncstate-ucomm/mobile-nav-wp.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

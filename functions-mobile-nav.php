@@ -1,8 +1,5 @@
 <?php
 
-// First include the mobile nav walker
-include_once( 'includes/Mobile_Walker_Nav_Menu.php' );
-
 // Set global variable to open the right mobile menu location
 // when rendering.
 function ncstate_set_current_menu_item_ancestor_id( $sorted_menu_items )
