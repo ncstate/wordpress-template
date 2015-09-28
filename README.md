@@ -1,4 +1,4 @@
-# NC State Campus Theme -- Version 2.0 Release Candidate
+# NC State Campus Theme -- Version 2.0
 
 ## Theme Update Info
 If updating from a 1.x version of the theme, it is **strongly** recommended that you make a backup of your DB before installing this update.  Some settings are not yet migratable.
