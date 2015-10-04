@@ -8,7 +8,7 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
 		<title><?php wp_title(' :: ', true, 'right'); bloginfo('name'); ?></title>
-		<link rel="shortcut icon" href="http://www.ncsu.edu/favicon.ico" />
+		<link rel="shortcut icon" href="https://www.ncsu.edu/favicon.ico" />
 
 		<!-- NC State Bootstrap CSS -->
 		<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
