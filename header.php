@@ -3,24 +3,26 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head>		
+	<head>	
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
 		<title><?php wp_title(' :: ', true, 'right'); bloginfo('name'); ?></title>
 		<link rel="shortcut icon" href="https://www.ncsu.edu/favicon.ico" />
 
-		<!-- NC State Bootstrap CSS -->
-		<link href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
-		<!-- Wordpress Theme Style -->
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
 		
 		<!-- picture element polyfill -->
 		<script>
 			// Picture element HTML5 shiv
 			document.createElement( "picture" );
 		</script>
-		<script src="<?php bloginfo('template_url'); ?>/js/picturefill.min.js" async></script>
+		
+
+		<!-- Prefetch DNS for external assets -->
+		<link rel="dns-prefetch" href="//cdn.ncsu.edu">
+		<link rel="dns-prefetch" href="//www.google-analytics.com">
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,11 +32,8 @@
 	    <![endif]-->
 
 	    <!-- NC State Utility Bar -->
-		<?php if(ot_get_option('cse_id')): ?>
-	    	<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=<?php echo ot_get_option('cse_id'); ?>&placeholder=Search"></script>
-		<?php else: ?>
-			<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php"></script>
-		<?php endif; ?>
+
+	    <script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?googleCustomSearchCode=<?php echo ot_get_option('cse_id'); ?>&placeholder=<?php echo ot_get_option('search_placeholder'); ?>"></script>
 		
 		<?php wp_head(); ?> 
 	</head>
@@ -42,13 +41,15 @@
 	<body>
 		
 		<div id="ncstate-utility-bar"></div>
+		
 		<header>
 			<div class='container'>
 				<div class='site-title'>
-					<button type="button">
-				       <span class="sr-only">Toggle navigation</span>
-				       <span class="glyphicon glyphicon-menu" id="menu-toggle"></span>
-				    </button>
+					<button type="button" id="menu-toggle">
+					    <span class="sr-only">Toggle Navigation</span>
+					    Menu
+					    <span class="glyphicon glyphicon-thin-menu" aria-hidden="true"></span>
+					</button>
 					<?php $brick = (ot_get_option('brick') ? ot_get_option('brick') : '2x1'); ?>
 				    <a href="<?php echo home_url(); ?>">
 						<img src='<?php bloginfo('template_directory'); ?>/img/ncstate-brick-<?php echo $brick; ?>-red.png' alt="NC State"/>
@@ -62,8 +63,8 @@
 					</a>
 				</div>
 				
-				<nav id="global-nav">
-					
+				<nav role="navigation" aria-label="Primary navigation menus" class="primary-nav" id="global-nav" >
+
 					<?php 
 						$args = array(
 							'container' => false,
@@ -76,7 +77,9 @@
 						wp_nav_menu($args);
 					?>
 				</nav> <!--#global-nav-->
-
 			</div>
 		</header>
-		
+
+		<?php ncstate_mobile_nav(); ?>
+
+		<div id="mobile-nav-slide-out">

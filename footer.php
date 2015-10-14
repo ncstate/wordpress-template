@@ -53,20 +53,13 @@
 		</div>
 	</footer>
 
-	<!-- jQuery 2.1.0 -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
-
-	<script src='<?php bloginfo('template_directory'); ?>/js/main.js'></script>
-
-
 	<?php 
 			if ($theme['opt-tracking-code']!=NULL) :
 				echo $theme['opt-tracking-code'];
 		  	endif; 
 	?>
 	<?php wp_footer(); ?> 
+	
+	</div> <!--mobile-nav-slide-out -->
 </body>
 </html>

@@ -1,0 +1,196 @@
+
+@import "_mixins";
+
+//== Media queries breakpoints
+$screen-xs-min:              480px !default;
+$screen-sm-min:              768px !default;
+$screen-md-min:              992px !default;
+$screen-lg-min:              1200px !default;
+
+
+//Styles for the mobile glyphicon
+
+#menu-toggle {
+  float: right;
+  border: none;
+  background-color: transparent;
+  margin: 0 -5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  #menu-toggle {display: none};
+}
+#menu-toggle .glyphicon {
+  font-size: 3.2em;
+  vertical-align: -33%;
+  padding-left: 5px;
+}
+
+// Styles for main content area
+
+#mobile-nav-slide-out {
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
+  @include transition-transform(0.3s ease);
+}
+
+
+// Mobile nav
+
+.mobile-nav-shown {
+  @media (max-width: $screen-sm-min) {
+    #mobile-nav-slide-out {
+      @include translate3d(-100%, 0, 0);
+    }
+    #mobile-nav {
+      opacity: 1;
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    #mobile-nav-slide-out {
+      display: block !important;
+    }
+  }
+}
+
+#mobile-nav {
+  font-family: UniversLight;
+  width: 100%;
+  opacity: 0;
+  @include transition(opacity 0.3s ease);
+  background-color: #fff;
+  border-top: 1px solid #aaa;
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+
+  &.level-2-shown {
+    #level-1 {
+      @include translate3d(-100%, 0, 0);
+    }
+  }
+
+  .is-active,
+  .current-menu-item > a,
+  .current-menu-ancestor > a {
+    font-weight: bold;
+  }
+
+  .has-more,
+  .has-dropdown,
+  #full-nav {
+    @include clearfix();
+    button {
+      color: #aaa;
+      background-color: #f2f2f2;
+      border: none;
+      font-size: 50px;
+      padding: 3px;
+    }
+  }
+
+  .has-more,
+  .has-dropdown {
+    button {
+      float: right;
+    }
+  }
+
+  .has-dropdown {
+    & > .is-active + ul {
+      display: block;
+    }
+    button {
+      background: transparent;
+      @include rotate(90deg);
+    }
+    &.is-open button {
+      @include rotate(-90deg);
+    }
+  }
+
+  #full-nav {
+    button {
+      float: left;
+      margin-right: 10px;
+      @include rotate(180deg);
+    }
+    a {
+      line-height: 2.17;
+    }
+  }
+
+  ul {
+    margin: 0;
+    & + ul {
+      border-top: 5px solid #ccc;
+    }
+  }
+
+  ul ul a {
+    padding-left: 2.5em;
+  }
+
+  ul ul ul {
+    display: none;
+    width: 100%;
+    background-color: #e6e6e6;
+    overflow: hidden; // Fix slider movement
+
+    a {
+      padding-left: 4em;
+    }
+  }
+
+  ul ul ul ul {
+    display: block;
+    background-color: #f2f2f2;
+    li {
+      border-color: #ccc;
+    }
+    a {
+      padding-left: 4.8em;
+    }
+  }
+
+  li {
+    background: none;
+      & + li,
+      a + ul {
+        border-top: 1px solid #aaa;
+      }
+  }
+
+  a {
+    color: #000;
+    display: block;
+    padding: 15px;
+    height: 55px;
+    line-height: 1.9;
+  }
+}
+
+#level-1,
+#level-2 {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  background-color: #fff;
+}
+
+#level-1 {
+  z-index: 102;
+  @include transition-transform(0.3s ease);
+}
+
+#level-2 {
+  display: none;
+  z-index: 101;
+
+  #full-nav {
+    text-transform: uppercase;
+    font-size: 0.85em;
+  }
+}
