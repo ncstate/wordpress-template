@@ -70,6 +70,6 @@ function get_ncstate_mobile_nav($location = 'primary') {
 }
 
 // Optional helper
-function ncstate_mobile_nav($location) {
+function ncstate_mobile_nav($location='') {
     echo get_ncstate_mobile_nav($location);
 }

@@ -70,7 +70,7 @@
 							'container' => false,
 							'menu_class' => 'nav',
 							'title_li' => false,
-							'theme_location' => 'primary-menu',
+							'theme_location' => 'primary',
 							'depth' => 2
 							);
 						

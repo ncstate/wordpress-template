@@ -82,18 +82,19 @@ if (!function_exists('ncsu_theme_scripts')) {
 // Nav menus
 
 if (!function_exists('ncsu_register_menus')) {
-    
-    register_nav_menu('primary', 'Primary website navigation');
-    
-    if (!class_exists('Sidebar_Walker_Level_Menu')):
-        include_once ('includes/Sidebar_Walker_Level_Menu.php');
-    endif;
-    
-    if (!class_exists('Mobile_Walker_Nav_Menu')):
-        include_once ('includes/Mobile_Walker_Nav_Menu.php');
-    endif;
-    
-    add_action('init', 'ncsu_register_menus');
+
+	function ncsu_register_menus() {
+		register_nav_menu('primary', 'Primary website navigation');
+
+		if (!class_exists('Sidebar_Walker_Level_Menu')):
+			include_once ('includes/Sidebar_Walker_Level_Menu.php');
+		endif;
+
+		if (!class_exists('Mobile_Walker_Nav_Menu')):
+			include_once ('includes/Mobile_Walker_Nav_Menu.php');
+		endif;
+	}
+	add_action('init', 'ncsu_register_menus');
 }
 
 /**
