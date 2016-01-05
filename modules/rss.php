@@ -24,7 +24,7 @@
 							<time><?php echo date('M j, Y', strtotime($item->pubDate)); ?></time>
 						<?php endif; ?>	
 							<h4><?php echo esc_html( $item->title ); ?></h4>
-							<p><?php echo wp_trim_words( esc_html((string)$item->description), 20, "<span style='color:#c00'> [&hellip;]</span>" ) ;?></p>
+							<p><?php echo wp_trim_words( esc_html(strip_tags((string)$item->description)), 20, "<span style='color:#c00'> [&hellip;]</span>" ) ;?></p>
 						</div>
 					</a>
 				</div>
