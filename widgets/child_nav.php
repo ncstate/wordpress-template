@@ -50,3 +50,9 @@ class NCState_Child_Nav extends WP_Widget {
 		// processes widget options to be saved
 	}
 }
+
+// register NC State left nav widget
+function register_ncstate_child_nav_widget() {
+	register_widget( 'NCState_Child_Nav' );
+}
+add_action( 'widgets_init', 'register_ncstate_child_nav_widget' );
