@@ -30,7 +30,7 @@ class Sidebar_Walker_Level_Menu extends Walker_Nav_Menu {
 
   	}
 
-	public function walk( $elements, $max_depth) {
+	  public function walk( $elements, $max_depth, ...$args ) {
 
 		/*
 		//title = name in menu 

@@ -19,7 +19,7 @@ class Mobile_Walker_Nav_Menu extends Walker_Nav_Menu {
    * @param int   $max_depth The maximum hierarchical depth.
    * @return string The hierarchical item output.
    */
-  public function walk( $elements, $max_depth) {
+  public function walk( $elements, $max_depth, ...$args ) {
 
     $args = array_slice(func_get_args(), 2);
     $output = '';
